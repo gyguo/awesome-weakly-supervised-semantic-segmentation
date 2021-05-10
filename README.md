@@ -12,44 +12,47 @@
 
 ### 1.1. Weakly Supervised Semantic Segmentation performance on PASCAL VOC 2012 dataset
 
-**Sup.:** I-image-level class label, B-bounding box label, S-scribble label, P-point label.
+- **Sup.:** I-image-level class label, B-bounding box label, S-scribble label, P-point label.
+- **Bac. W:** backbone of weakly-supervised branch
+- **Arc. F:** backbone and method of the fully-supervised branch. "-" indicates no fully-supervised model is utilized, "?" indicates the corresponding item is unknown
+- For methods that use multiple backbones, only the best performance is reported
 
-|   Method   |   Pub.    |  Backbone  | Sup.  | Extra data | val  | test |
-| :--------: | :-------: | :--------: | :---: | :--------: | :--: | :--: |
-| Oh et al.  | CVPR2021  | ResNet-101 | **B** |  MS-COCO   | 74.6 | 76.1 |
-|    WSSL    | ICCV2015  |   VGG-16   | **B** |     -      | 60.6 | 62.2 |
-|    BBAM    | CVPR2021  | ResNet101  | **B** |     -      | 73.7 | 73.7 |
-|    SPML    | ICLR2021  | ResNet101  | **B** |     -      | 73.5 | 74.7 |
-|            |           |            |       |            |      |      |
-| NormalCut  | CVPR2018  | ResNet101  | **S** |     -      | 74.5 |  -   |
-| KernelCut  | ECCV2018  | ResNet101  | **S** |     -      | 75.0 |  -   |
-|    BPG     | IJCAI2019 | ResNet101  | **S** |     -      | 76.0 |  -   |
-|    SPML    | ICLR2021  | ResNet101  | **S** |     -      | 76.1 |  -   |
-|            |           |            |       |            |      |      |
-| WhatsPoint | ECCV2016  |   VGG-16   | **P** |     -      | 46.1 |  -   |
-|    PCAM    | arxiv2020 |  ResNet50  | **P** |     -      | 70.5 |  -   |
-|            |           |            |       |            |      |      |
-|    DSRG    | CVPR2018  | ResNet-101 | **I** |   MSRA-B   | 61.4 | 63.2 |
-| Ficklenet  | CVPR2019  | ResNet-101 | **I** |   MSRA-B   | 64.9 | 65.3 |
-|            |           |            |       |            |      |      |
-|   CONTA    | NeurIPS20 | ResNet101  | **I** |     -      | 66.1 | 66.7 |
-|            |           |            | **I** |            |      |      |
-|            |           |            | **I** |            |      |      |
-|            |           |            | **I** |            |      |      |
-|    SPML    | ICLR2021  | ResNet101  | **I** |     -      | 69.5 | 71.6 |
-|            |           |            | **I** |            |      |      |
-|            |           |            | **I** |            |      |      |
-|            |           |            | **I** |            |      |      |
-|            |           |            | **I** |            |      |      |
+|    Method     |   Pub.    |        Bac. W         |        Arc. F        | Sup.  |  Extra data   | val  | test |
+| :-----------: | :-------: | :-------------------: | :------------------: | :---: | :-----------: | :--: | :--: |
+|   Oh et al.   | CVPR2021  |       ResNet101       | ResNet101 DeepLab-v2 | **B** |    MS-COCO    | 74.6 | 76.1 |
+|     WSSL      | ICCV2015  |         VGG16         |          ?           | **B** |       -       | 60.6 | 62.2 |
+|     BBAM      | CVPR2021  |           ?           | ResNet101 DeepLab-v2 | **B** | MCG proposals | 73.7 | 73.7 |
+|     SPML      | ICLR2021  | ResNet101  DeepLab-v2 |                      | **B** |       -       | 73.5 | 74.7 |
+|               |           |                       |                      |       |               |      |      |
+|   NormalCut   | CVPR2018  |                       |      ResNet101       | **S** |       -       | 74.5 |  -   |
+|   KernelCut   | ECCV2018  |                       |      ResNet101       | **S** |       -       | 75.0 |  -   |
+|      BPG      | IJCAI2019 |                       |      ResNet101       | **S** |       -       | 76.0 |  -   |
+|     SPML      | ICLR2021  |                       |      ResNet101       | **S** |       -       | 76.1 |  -   |
+|               |           |                       |                      |       |               |      |      |
+|  WhatsPoint   | ECCV2016  |                       |        VGG16         | **P** |       -       | 46.1 |  -   |
+|     PCAM      | arxiv2020 |                       |       ResNet50       | **P** |       -       | 70.5 |  -   |
+|               |           |                       |                      |       |               |      |      |
+|     DSRG      | CVPR2018  |                       |      ResNet101       | **I** |    MSRA-B     | 61.4 | 63.2 |
+|   Ficklenet   | CVPR2019  |                       |      ResNet101       | **I** |    MSRA-B     | 64.9 | 65.3 |
+|               |           |                       |                      |       |               |      |      |
+| CONTA (+SEAM) | NeurIPS20 |       ResNet-38       | ResNet101 DeepLab-v2 | **I** |       -       | 66.1 | 66.7 |
+|               |           |                       |                      | **I** |               |      |      |
+|               |           |                       |                      | **I** |               |      |      |
+|               |           |                       |                      | **I** |               |      |      |
+|     SPML      | ICLR2021  |                       |      ResNet101       | **I** |       -       | 69.5 | 71.6 |
+|               | CVPR2021  |                       |                      | **I** |               |      |      |
+|               |           |                       |                      | **I** |               |      |      |
+|               |           |                       |                      | **I** |               |      |      |
+|               |           |                       |                      | **I** |               |      |      |
 
-### 1.2. Semantic Segmentation supervised by image-level class Only (I)
+### 1.2. Semantic Segmentation supervised by image-level class (I)
 
 - **Method:** "" *2020*
 - **DSRG:** "Weakly-supervised semantic segmentation network with deep seeded region growing" *CVPR2018*
 - **Ficklenet:** " Ficklenet: Weakly and semi-supervised semantic image segmentation using stochastic inference" *CVPR2019*
 - **CONTA:** "Causal intervention for weakly-supervised semantic segmentation" *NeurIPS20*
 - **SPML:** "Universal Weakly Supervised Segmentation by Pixel-to-Segment Contrastive Learning" *ICLR2021*
-- **Method:** "" *2020*
+- **Method:** " Anti-Adversarially Manipulated Attributions for Weakly and Semi-Supervised Semantic Segmentation" *CVPR2021*
 
 ### 1.3. Semantic Segmentation supervised by bounding box (B)
 
