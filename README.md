@@ -15,18 +15,18 @@
 - **Sup.:** I-image-level class label, B-bounding box label, S-scribble label, P-point label.
 - **Ext.:** Extra Data used for pre-training
 
-|  Method   |   Pub.    | Backbone  | Sup. | Ext. | val  | test |
-| :-------: | :-------: | :-------: | :--: | :--: | :--: | :--: |
-|   WSSL    | ICCV2015  |  VGG-16   |  B   |  -   | 60.6 | 62.2 |
-|   BBAM    | CVPR2021  | ResNet101 |  B   |  -   | 73.7 | 73.7 |
-| NormalCut | CVPR2018  | ResNet101 |  S   |  -   | 74.5 |  -   |
-| KernelCut | ECCV2018  | ResNet101 |  S   |  -   | 75.0 |  -   |
-|    BPG    | IJCAI2019 | ResNet101 |  S   |  -   | 76.0 |  -   |
-|           |           |           |  P   |  -   |      |      |
-|           |           |           |  P   |  -   |      |      |
-|           |           |           |      |      |      |      |
-|           |           |           |      |      |      |      |
-|           |           |           |      |      |      |      |
+|   Method   |   Pub.    | Backbone  | Sup. | Ext. | val  | test |
+| :--------: | :-------: | :-------: | :--: | :--: | :--: | :--: |
+|    WSSL    | ICCV2015  |  VGG-16   |  B   |  -   | 60.6 | 62.2 |
+|    BBAM    | CVPR2021  | ResNet101 |  B   |  -   | 73.7 | 73.7 |
+| NormalCut  | CVPR2018  | ResNet101 |  S   |  -   | 74.5 |  -   |
+| KernelCut  | ECCV2018  | ResNet101 |  S   |  -   | 75.0 |  -   |
+|    BPG     | IJCAI2019 | ResNet101 |  S   |  -   | 76.0 |  -   |
+| WhatsPoint | ECCV2016  |  VGG-16   |  P   |  -   |      |      |
+|            |           |           |  P   |  -   |      |      |
+|            |           |           |      |      |      |      |
+|            |           |           |      |      |      |      |
+|            |           |           |      |      |      |      |
 
 ### 1.2. Semantic Segmentation supervised by image-level class (I)
 
@@ -46,7 +46,7 @@
 
 ### 1.5. Semantic Segmentation supervised by point (P)
 
-**Todo**
+- **WhatsPoint:** "What’s the Point: Semantic Segmentation with Point Supervision" *ECCV2016*
 
 
 
