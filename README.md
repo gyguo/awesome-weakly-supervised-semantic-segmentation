@@ -10,7 +10,7 @@
 
 ## 1. Semantic Segmentation
 
-#### 1.1. Weakly Supervised Semantic Segmentation performance on PASCAL VOC 2012 dataset
+### 1.1. Weakly Supervised Semantic Segmentation performance on PASCAL VOC 2012 dataset
 
 - **Sup.:** I-image-level class label, B-bounding box label, S-scribble label, P-point label.
 - **Ext.:** Extra Data used for pre-training
@@ -28,23 +28,23 @@
 |           |           |           |      |      |      |      |
 |           |           |           |      |      |      |      |
 
-#### 1.2. Semantic Segmentation supervised by image-level class (I)
+### 1.2. Semantic Segmentation supervised by image-level class (I)
 
 - **Method:** "" 20
 
-#### 1.3. Semantic Segmentation supervised by bounding box (B)
+### 1.3. Semantic Segmentation supervised by bounding box (B)
 
 - **WSSL:** "Weakly-and semi-supervised learning of a deep convolutional network for semantic image segmentation" *ICCV2015*
 
 - **BBAM:** "BBAM: Bounding Box Attribution Map for Weakly Supervised Semantic and Instance Segmentation" *CVPR2021*
 
-#### 1.4. Semantic Segmentation supervised by scribble (S)
+### 1.4. Semantic Segmentation supervised by scribble (S)
 
 - **NormalCut :** "Normalized cut loss for weakly-supervised cnn segmentation" *CVPR2018*
 - **KernelCut :** "On regularized losses for weakly-supervised cnn segmentation" *ECCV2018*
 - **BPG:**  "Boundary Perception Guidance: A Scribble-Supervised Semantic Segmentation Approach" *IJCAI2019*
 
-#### 1.5. Semantic Segmentation supervised by point (P)
+### 1.5. Semantic Segmentation supervised by point (P)
 
 **Todo**
 
