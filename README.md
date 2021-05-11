@@ -28,43 +28,43 @@
 |    Song *et al.*     |  CVPR2019   |      -      |  ResNet101  DeepLabv1  | **B** |            -            |            ***I***            | 70.2 |  -   |
 | SPML (Song *et al.*) |  ICLR2021   |      -      |  ResNet101  DeepLabv2  | **B** |            -            |            ***I***            | 73.5 | 74.7 |
 |                      |             |               |                         |       |                         |                         |      |      |
-|      NormalCut       |  CVPR2018   |       -       |  ResNet101 DeepLabv1   | **S** |            Saliancy            |            ***?***            | 74.5 |  -   |
-|      KernelCut       |  ECCV2018   |       -       |  ResNet101 DeepLabv1   | **S** |            -            |            ***?***            | 75.0 |  -   |
-|         BPG          |  IJCAI2019  |       -       |  ResNet101 DeepLabv2   | **S** |            -            |            ***?***            | 76.0 |  -   |
+|      NormalCut       |  CVPR2018   |       -       |  ResNet101 DeepLabv1   | **S** |            Saliancy            |            **?**            | 74.5 |  -   |
+|      KernelCut       |  ECCV2018   |       -       |  ResNet101 DeepLabv1   | **S** |            -            |            **?**            | 75.0 |  -   |
+|         BPG          |  IJCAI2019  |       -       |  ResNet101 DeepLabv2   | **S** |            -            |            **?**            | 76.0 |  -   |
 |   SPML (KernelCut)   |  ICLR2021   |       -       |  ResNet101 DeepLabv2  | **S** |            -            |  ***I***  | 76.1 |  -   |
 |                      |             |               |                         |       |                         |                         |      |      |
 |      WhatsPoint      |  ECCV2016   |  -  |            VGG16 FCN            | **P** |    Objectness     | ***I*** | 46.1 |  -   |
-|         PCAM         |  arxiv2020  |   ResNet50   |      ? DeepLabv3+       | **P** |            -            |            ***?***            | 70.5 |  -   |
+|         PCAM         |  arxiv2020  |   ResNet50   |      ? DeepLabv3+       | **P** |            -            |            **?**            | 70.5 |  -   |
 |                      |             |               |                         |       |                         |                         |      |      |
 | SEC | ECCV2016 | VGG16 | VGG16 DeepLabv1 | **I** | Saliancy | ***I*** | 50.7 | 51.7 |
 |      DSRG (SEC)      |  CVPR2018   | VGG16 |  ResNet101 DeepLabv2   | **I** |     Saliancy      |     ***I***     | 61.4 | 63.2 |
-| Fan *et al.* | ECCV2018 | ResNet101 | ResNet101 DeepLabv2 | **I** | Saliancy | ***?*** | 63.6 | 64.5 |
+| Fan *et al.* | ECCV2018 | ResNet101 | ResNet101 DeepLabv2 | **I** | Saliancy | **?** | 63.6 | 64.5 |
 |   Ficklenet (DSRG)   |  CVPR2019   | VGG16 |  ResNet101 DeepLabv2   | **I** |     Saliancy      | ***I*** | 64.9 | 65.3 |
-| Fan *et al.* | ECCV2018 | ResNet101 | ResNet101 DeepLabv2 | **I** | Saliancy<br/>24KImageNet | ***?*** | 64.5 | 65.6 |
+| Fan *et al.* | ECCV2018 | ResNet101 | ResNet101 DeepLabv2 | **I** | Saliancy<br/>24KImageNet | **?** | 64.5 | 65.6 |
 |         OAA         |   ICCV2019   | VGG16 | ResNet101 DeepLabv1 | **I** | Saliancy | ***I*** | 65.2 | 66.4 |
-|     Fan *et al.*     |  ECCV2020   | ResNet38 |  ResNet101 DeepLabv1   | **I** |     Saliancy      | ***?*** | 67.2 | 66.7 |
-|     MCIS     |  ECCV2020   |    VGG16     |  ResNet101 DeepLabv1   | **I** |     Saliancy      |   ***?*** | 66.2 | 66.9 |
+|     Fan *et al.*     |  ECCV2020   | ResNet38 |  ResNet101 DeepLabv1   | **I** |     Saliancy      | **?** | 67.2 | 66.7 |
+|     MCIS     |  ECCV2020   |    VGG16     |  ResNet101 DeepLabv1   | **I** |     Saliancy      |   **?** | 66.2 | 66.9 |
 | Lee *et al.* | ICCV2019 | VGG16 | ResNet101 DeepLabv2 | **I** | Saliancy Web | ***I*** | 66.5 | 67.4 |
-|         LIID         |  PAMI2020   |   ResNet50   |  ResNet101 DeepLabv2   | **I** |     Saliancy      | ***?*** | 66.5 | 67.5 |
-|     MCIS     |  ECCV2020   |    VGG16     |  ResNet101 DeepLabv1   | **I** | Saliancy Web | ***?*** | 67.7 | 67.5 |
-| ICD | CVPR2020 | VGG16 | ResNet101 DeepLabv1 | **I** | Saliancy | ***?*** | 67.8 | 68.0 |
-| LIID | PAMI2020 | ResNet50 | ResNet101 DeepLabv2 | **I** | Saliancy<br>24KImageNet | ***?*** | 67.8 | 68.3 |
-| Li *et al.* | AAAI2021 | ResNet101 | ResNet101 DeepLabv2 | **I** | Saliancy | ***?*** | 68.2 | 68.5 |
+|         LIID         |  PAMI2020   |   ResNet50   |  ResNet101 DeepLabv2   | **I** |     Saliancy      | **?** | 66.5 | 67.5 |
+|     MCIS     |  ECCV2020   |    VGG16     |  ResNet101 DeepLabv1   | **I** | Saliancy Web | **?** | 67.7 | 67.5 |
+| ICD | CVPR2020 | VGG16 | ResNet101 DeepLabv1 | **I** | Saliancy | **?** | 67.8 | 68.0 |
+| LIID | PAMI2020 | ResNet50 | ResNet101 DeepLabv2 | **I** | Saliancy<br>24KImageNet | **?** | 67.8 | 68.3 |
+| Li *et al.* | AAAI2021 | ResNet101 | ResNet101 DeepLabv2 | **I** | Saliancy | **?** | 68.2 | 68.5 |
 | Yao et al. | CVPR2021 | VGG16 | ResNet101 DeepLabv2 | **I** | Saliancy | ***I*** | 68.3 | 68.5 |
 | Yao et al. | CVPR2021 | VGG16 | ResNet101 DeepLabv2 | **I** | Saliancy | ***I+C*** | 70.4 | 70.2 |
-|         DRS          |  AAAI2021   |    VGG16     |  ResNet101 DeepLabv2   | **I** | Saliancy | ***?*** | 71.2 | 71.4 |
+|         DRS          |  AAAI2021   |    VGG16     |  ResNet101 DeepLabv2   | **I** | Saliancy | **?** | 71.2 | 71.4 |
 |   SPML (Ficklenet)   |  ICLR2021   |    VGG16     |  ResNet101 DeepLabv2  | **I** |     Saliancy      | ***I*** | 69.5 | 71.6 |
 |                      |             |               |                         |       |                         |                         |      |      |
 |                      |             |               |                         |       |                         |                         |      |      |
-| ICD | CVPR2020 | VGG16 | ResNet101 DeepLabv1 | **I** | - | ***?*** | 64.1 | 64.3 |
+| ICD | CVPR2020 | VGG16 | ResNet101 DeepLabv1 | **I** | - | **?** | 64.1 | 64.3 |
 |         IRN          |  CVPR2019   | ResNet50 | ResNet50 DeepLabv2 | **I** | - | ***I*** | 63.5 | 64.8 |
 | IAL | IJCV20 | ResNet? | ResNet? | **I** | - | ***I*** | 64.3 | 65.4 |
 |         SSDD (PSA)         |  ICCV2019   | ResNet38 | ResNet38 | **I** |            -            |            ***I***            | 64.9 | 65.5 |
 |         SEAM         |  CVPR2020   | ResNet38 | ResNet38 DeepLabv2 | **I** |            -            |            ***I***            | 64.5 | 65.7 |
-|    Chang *et al.*    |  CVPR2020   | ResNet38 |  ResNet101 DeepLabv2   | **I** |            -            |            ***?***            | 66.1 | 65.9 |
-|         RRM          |  AAAI2020   | ResNet38 |  ResNet101 DeepLabv2   | **I** |            -            | ***I+C*** | 66.3 | 66.5 |
-|    BES  |  ECCV2020   |   ResNet50    |  ResNet101 DeepLabv2   | **I** |            -            |            ***?***            | 65.7 | 66.6 |
-|    CONTA (+SEAM)     | NeurIPS2020 | ResNet38 |  ResNet101 DeepLabv2   | **I** |            -            |            ***?***            | 66.1 | 66.7 |
+|    Chang *et al.*    |  CVPR2020   | ResNet38 |  ResNet101 DeepLabv2   | **I** |            -            |            **?**            | 66.1 | 65.9 |
+|         RRM          |  AAAI2020   | ResNet38 |  ResNet101 DeepLabv2   | **I** |            -            | **?** | 66.3 | 66.5 |
+|    BES  |  ECCV2020   |   ResNet50    |  ResNet101 DeepLabv2   | **I** |            -            |            **?**            | 65.7 | 66.6 |
+|    CONTA (+SEAM)     | NeurIPS2020 | ResNet38 |  ResNet101 DeepLabv2   | **I** |            -            |            **?**            | 66.1 | 66.7 |
 |        AdvCAM        |  CVPR2021   |   ResNet-50   |  ResNet101 DeepLabv2   | **I** |            -            |            ***I***            | 68.1 | 68.0 |
 |                      |             |           |                      |       |                          |           |      |      |
 
