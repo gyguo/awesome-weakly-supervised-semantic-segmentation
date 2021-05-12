@@ -1,4 +1,4 @@
-# Awesome Weakly-supervised Image Segmentation
+# Awesome Weakly-supervised Semantic Segmentation （Image）
 
 ------
 
@@ -8,9 +8,9 @@
 
 
 
-## 1. Semantic Segmentation
+# 1. Performance
 
-### 1.1. Weakly Supervised Semantic Segmentation performance on PASCAL VOC 2012 dataset
+### 1.1. Results on PASCAL VOC 2012 dataset
 
 - For each method, I will provide the name of baseline in brackets if it has. 
 - **Sup.:** I-image-level class label, B-bounding box label, S-scribble label, P-point label.
@@ -68,7 +68,13 @@
 |        AdvCAM        |  CVPR2021   |   ResNet-50   |  ResNet101 DeepLabv2   | **I** |            -            |            ***I***            | 68.1 | 68.0 |
 |                      |             |           |                      |       |                          |           |      |      |
 
-### 1.2. Semantic Segmentation supervised by image tags (I)
+### 1.2. Results on MS-COCO dataset
+
+**TODO**
+
+# 2. Paper List
+
+## 2.1. supervised by image tags (I)
 
 **2016**
 
@@ -110,7 +116,7 @@
 - **Yao et al.  **: "Non-Salient Region Object Mining for Weakly Supervised Semantic Segmentation" *CVPR2021*
 - **Method:** "" *2021*
 
-### 1.3. Semantic Segmentation supervised by bounding box (B)
+### 2.2. Supervised by bounding box (B)
 
 **2015**
 
@@ -126,7 +132,7 @@
 - **Oh *et al.*:** "Ba ckground-Aware Pooling and Noise-Aware Loss for Weakly-Supervised Semantic Segmentation" CVPR2021
 - **SPML:** "Universal Weakly Supervised Segmentation by Pixel-to-Segment Contrastive Learning" *ICLR2021*
 
-### 1.4. Semantic Segmentation supervised by scribble (S)
+### 2.3. Supervised by scribble (S)
 
 **2018**
 
@@ -145,20 +151,12 @@
 
 - **SPML:** "Universal Weakly Supervised Segmentation by Pixel-to-Segment Contrastive Learning" *ICLR2021*
 
-### 1.5. Semantic Segmentation supervised by point (P)
+### 2.4. Supervised by point (P)
 
 - **WhatsPoint:** "What’s the Point: Semantic Segmentation with Point Supervision" *ECCV2016*
 - **PCAM:** "PCAMs: Weakly Supervised Semantic Segmentation Using Point Supervision" *arxiv2020*
 
-## 2. Instance Segmentation
-
-##### Todo
-
-## 3. Panoptic segmentation
-
-##### Todo
-
-## 4. Dataset
+# 3. Dataset
 
 ##### PASCAL VOC 2012
 
