@@ -55,7 +55,7 @@
 |         DRS          |  AAAI2021   |    VGG16     |  ResNet101 DeepLabv2   | **I** | Saliancy | **?** | 71.2 | 71.4 |
 |   SPML (Ficklenet)   |  ICLR2021   |    VGG16     |  ResNet101 DeepLabv2  | **I** |     Saliancy      | ***I*** | 69.5 | 71.6 |
 |                      |             |               |                         |       |                         |                         |      |      |
-|                      |             |               |                         |       |                         |                         |      |      |
+| AffinityNet | CVPR2018 | ResNet38 | ResNet38 | **I** | - | **?** | 61.7 | 63.7 |
 | ICD | CVPR2020 | VGG16 | ResNet101 DeepLabv1 | **I** | - | **?** | 64.1 | 64.3 |
 |         IRN          |  CVPR2019   | ResNet50 | ResNet50 DeepLabv2 | **I** | - | ***I*** | 63.5 | 64.8 |
 | IAL | IJCV20 | ResNet? | ResNet? | **I** | - | ***I*** | 64.3 | 65.4 |
@@ -65,8 +65,9 @@
 |         RRM          |  AAAI2020   | ResNet38 |  ResNet101 DeepLabv2   | **I** |            -            | **?** | 66.3 | 66.5 |
 |    BES  |  ECCV2020   |   ResNet50    |  ResNet101 DeepLabv2   | **I** |            -            |            **?**            | 65.7 | 66.6 |
 |    CONTA (+SEAM)     | NeurIPS2020 | ResNet38 |  ResNet101 DeepLabv2   | **I** |            -            |            **?**            | 66.1 | 66.7 |
+| WSGCN (IRN) | ICME2021 | ResNet50 | ResNet101 DeepLabv2 | **I** | - | **I** | 66.7 | 68.8 |
 |        AdvCAM        |  CVPR2021   |   ResNet-50   |  ResNet101 DeepLabv2   | **I** |            -            |            ***I***            | 68.1 | 68.0 |
-|                      |             |           |                      |       |                          |           |      |      |
+| WSGCN (IRN) | ICME2021 | ResNet50 | ResNet101 DeepLabv2 | **I** | - | **I+C** | 68.7 | 69.3 |
 
 ### 1.2. Results on MS-COCO dataset
 
@@ -83,6 +84,7 @@
 **2018**
 
 - **DSRG:** "Weakly-supervised semantic segmentation network with deep seeded region growing" *CVPR2018*
+- **AffinityNet:** "Learning Pixel-level Semantic Affinity with Image-level Supervision for Weakly Supervised Semantic Segmentation" *CVPR2018*
 - **Fan *et al.*:** "Associating inter-image salient instances for weakly supervised semantic segmentation" *ECCV2018*
 
 **2019**
@@ -114,6 +116,7 @@
 - **DRS:** "Discriminative Region Suppression for Weakly-Supervised Semantic Segmentation" *AAAI2021*
 - **AdvCAM:** " Anti-Adversarially Manipulated Attributions for Weakly and Semi-Supervised Semantic Segmentation" *CVPR2021*
 - **Yao et al.  **: "Non-Salient Region Object Mining for Weakly Supervised Semantic Segmentation" *CVPR2021*
+- **WSGCN:** "Weakly-Supervised Image Semantic Segmentation Using Graph Convolutional Networks" *ICME2021*
 - **Method:** "" *2021*
 
 ### 2.2. Supervised by bounding box (B)
