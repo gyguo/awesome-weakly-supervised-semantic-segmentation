@@ -22,38 +22,53 @@
 
 |        Method        |    Pub.     |    Bac. C     |         Arc. S          | Sup.  |       Extra data        |       Pre.S       | val  | test |
 | :------------------: | :---------: | :-----------: | :---------------------: | :---: | :---------------------: | :--: | -------------------- | -------------------- |
-|         BBAM         |  CVPR2021   |       ?       |  ResNet101 DeepLabv2   | **B** |           MCG           |           ***I***           | 73.7 | 73.7 |
-|     Oh *et al.*      |  CVPR2021   |  ResNet101   |  ResNet101 DeepLabv2   | **B** |            -             |    ***I+C***    | 74.6 | 76.1 |
+|        Boxsup        |  ICCV2015   |           |                      |       |                                         |           |      |      |
+|         BBAM         |  CVPR2021   |     ?     | ResNet101 DeepLabv2  | **B** |                   MCG                   |  ***I***  | 73.7 | 73.7 |
 |         WSSL         |  ICCV2015   |      -      |    VGG16 DeepLabv1     | **B** |            -            |            ***I***            | 60.6 | 62.2 |
 |    Song *et al.*     |  CVPR2019   |      -      |  ResNet101  DeepLabv1  | **B** |            -            |            ***I***            | 70.2 |  -   |
 | SPML (Song *et al.*) |  ICLR2021   |      -      |  ResNet101  DeepLabv2  | **B** |            -            |            ***I***            | 73.5 | 74.7 |
+| Oh *et al.* | CVPR2021 | ResNet101 | ResNet101 DeepLabv2 | **B** | - | ***I+C*** | 74.6 | 76.1 |
 |                      |             |               |                         |       |                         |                         |      |      |
-|      NormalCut       |  CVPR2018   |       -       |  ResNet101 DeepLabv1   | **S** |            Saliancy            |            **?**            | 74.5 |  -   |
+| Scribblesup | | | | **S** | | | | |
+|      NormalCut       |  CVPR2018   |       -       |  ResNet101 DeepLabv1   | **S** |            Saliency            |            **?**            | 74.5 |  -   |
 |      KernelCut       |  ECCV2018   |       -       |  ResNet101 DeepLabv1   | **S** |            -            |            **?**            | 75.0 |  -   |
 |         BPG          |  IJCAI2019  |       -       |  ResNet101 DeepLabv2   | **S** |            -            |            **?**            | 76.0 |  -   |
 |   SPML (KernelCut)   |  ICLR2021   |       -       |  ResNet101 DeepLabv2  | **S** |            -            |  ***I***  | 76.1 |  -   |
-|                      |             |               |                         |       |                         |                         |      |      |
+| A2GNN | TPAMI2021 | - | ? | **S** | - | **?** | 76.2 | 76.1 |
+| DFR | arxiv2021 | - | UperNet+Swin  Transformer | **S** | 22KImageNet | - | 82.8 | 82.9 |
+|                      |             |               |  |       |                         |                         |      |      |
 |      WhatsPoint      |  ECCV2016   |  -  |            VGG16 FCN            | **P** |    Objectness     | ***I*** | 46.1 |  -   |
-|         PCAM         |  arxiv2020  |   ResNet50   |      ? DeepLabv3+       | **P** |            -            |            **?**            | 70.5 |  -   |
-|                      |             |               |                         |       |                         |                         |      |      |
-| SEC | ECCV2016 | VGG16 | VGG16 DeepLabv1 | **I** | Saliancy | ***I*** | 50.7 | 51.7 |
-|      DSRG (SEC)      |  CVPR2018   | VGG16 |  ResNet101 DeepLabv2   | **I** |     Saliancy      |     ***I***     | 61.4 | 63.2 |
-| Fan *et al.* | ECCV2018 | ResNet101 | ResNet101 DeepLabv2 | **I** | Saliancy | **?** | 63.6 | 64.5 |
-|   Ficklenet (DSRG)   |  CVPR2019   | VGG16 |  ResNet101 DeepLabv2   | **I** |     Saliancy      | ***I*** | 64.9 | 65.3 |
-| Fan *et al.* | ECCV2018 | ResNet101 | ResNet101 DeepLabv2 | **I** | Saliancy<br/>24KImageNet | **?** | 64.5 | 65.6 |
-|         OAA         |   ICCV2019   | VGG16 | ResNet101 DeepLabv1 | **I** | Saliancy | ***I*** | 65.2 | 66.4 |
-|     Fan *et al.*     |  ECCV2020   | ResNet38 |  ResNet101 DeepLabv1   | **I** |     Saliancy      | **?** | 67.2 | 66.7 |
-|     MCIS     |  ECCV2020   |    VGG16     |  ResNet101 DeepLabv1   | **I** |     Saliancy      |   **?** | 66.2 | 66.9 |
-| Lee *et al.* | ICCV2019 | VGG16 | ResNet101 DeepLabv2 | **I** | Saliancy Web | ***I*** | 66.5 | 67.4 |
-|         LIID         |  PAMI2020   |   ResNet50   |  ResNet101 DeepLabv2   | **I** |     Saliancy      | **?** | 66.5 | 67.5 |
-|     MCIS     |  ECCV2020   |    VGG16     |  ResNet101 DeepLabv1   | **I** | Saliancy Web | **?** | 67.7 | 67.5 |
-| ICD | CVPR2020 | VGG16 | ResNet101 DeepLabv1 | **I** | Saliancy | **?** | 67.8 | 68.0 |
-| LIID | PAMI2020 | ResNet50 | ResNet101 DeepLabv2 | **I** | Saliancy<br>24KImageNet | **?** | 67.8 | 68.3 |
-| Li *et al.* | AAAI2021 | ResNet101 | ResNet101 DeepLabv2 | **I** | Saliancy | **?** | 68.2 | 68.5 |
-| Yao et al. | CVPR2021 | VGG16 | ResNet101 DeepLabv2 | **I** | Saliancy | ***I*** | 68.3 | 68.5 |
-| Yao et al. | CVPR2021 | VGG16 | ResNet101 DeepLabv2 | **I** | Saliancy | ***I+C*** | 70.4 | 70.2 |
-|         DRS          |  AAAI2021   |    VGG16     |  ResNet101 DeepLabv2   | **I** | Saliancy | **?** | 71.2 | 71.4 |
-|   SPML (Ficklenet)   |  ICLR2021   |    VGG16     |  ResNet101 DeepLabv2  | **I** |     Saliancy      | ***I*** | 69.5 | 71.6 |
+|         PCAM         |  arxiv2020  |   ResNet50   |      DeepLabv3+       | **P** |            -            |            **?**            | 70.5 |  -   |
+|  |  |  |  |  |  |  |  |  |
+| AF-SS | ECCV2016 |  |  | **I** | Saliency |  | 52.6 | 52.7 |
+| CrawlSeg | CVPR2017 |               |                         | **I** | YouTube Videos |                         | 58.1 | 58.7 |
+| SeeNet | NeurIPS2018 | | | **I** | Saliency | | 63.1 | 62.8 |
+| WebS-i2 | CVPR2017 | | | **I** | Web | |  |  |
+| TPL | ICCV2017 | | | **I** |  | |  |  |
+| GAIN | CVPR2018 | | | **I** |  | |  |  |
+| Oh *et al*. | CVPR2017 | | | **I** |  | |  |  |
+| SEC | ECCV2016 | VGG16 | VGG16 DeepLabv1 | **I** | Saliency | ***I*** | 50.7 | 51.7 |
+|      DSRG (SEC)      |  CVPR2018   | VGG16 |  ResNet101 DeepLabv2   | **I** |     Saliency      |     ***I***     | 61.4 | 63.2 |
+| AISI | ECCV2018 | ResNet101 | ResNet101 DeepLabv2 | **I** | Saliency | **?** | 63.6 | 64.5 |
+|   Ficklenet (DSRG)   |  CVPR2019   | VGG16 |  ResNet101 DeepLabv2   | **I** |     Instance-level Saliency     | ***I*** | 64.9 | 65.3 |
+| AISI | ECCV2018 | ResNet101 | ResNet101 DeepLabv2 | **I** | Instance-level Saliency<br/>24KImageNet | **?** | 64.5 | 65.6 |
+|         OAA         |   ICCV2019   | VGG16 | ResNet101 DeepLabv1 | **I** | Saliency | ***I*** | 65.2 | 66.4 |
+| Zhang *et al.* | ECCV2020 | ResNet50 | ResNet50 DeepLabv2 | **I** | Saliency |   **?**   | 66.6 | 66.7 |
+|     Fan *et al.*     |  ECCV2020   | ResNet38 |  ResNet101 DeepLabv1   | **I** |     Saliency      | **?** | 67.2 | 66.7 |
+|     MCIS     |  ECCV2020   |    VGG16     |  ResNet101 DeepLabv1   | **I** |     Saliency      |   **?** | 66.2 | 66.9 |
+| Lee *et al.* | ICCV2019 | VGG16 | ResNet101 DeepLabv2 | **I** | Saliency Web | ***I*** | 66.5 | 67.4 |
+|         LIID         |  PAMI2020   |   ResNet50   |  ResNet101 DeepLabv2   | **I** |     Saliency      | **?** | 66.5 | 67.5 |
+|     MCIS     |  ECCV2020   |    VGG16     |  ResNet101 DeepLabv1   | **I** | Saliency Web | **?** | 67.7 | 67.5 |
+| ICD | CVPR2020 | VGG16 | ResNet101 DeepLabv1 | **I** | Saliency | **?** | 67.8 | 68.0 |
+| LIID | PAMI2020 | ResNet50 | ResNet101 DeepLabv2 | **I** | Saliency<br />24KImageNet | **?** | 67.8 | 68.3 |
+| Li *et al.* | AAAI2021 | ResNet101 | ResNet101 DeepLabv2 | **I** | Saliency | **?** | 68.2 | 68.5 |
+| Yao et al. | CVPR2021 | VGG16 | ResNet101 DeepLabv2 | **I** | Saliency | ***I*** | 68.3 | 68.5 |
+| AuxSegNet | ICCV2021 | ResNet38 | - | **I** | Saliency | **?** | 69.0 | 68.6 |
+| SPML (Ficklenet) | ICLR2021 | VGG16 | ResNet101 DeepLabv2 | **I** | Saliency | ***I*** | 69.5 | 71.6 |
+| Yao et al. | CVPR2021 | VGG16 | ResNet101 DeepLabv2 | **I** | Saliency | ***I+C*** | 70.4 | 70.2 |
+| EDAM | CVPR2021 | ResNet38 | ResNet101 DeepLabv2 | **I** | Saliency | **?** | 70.9 | 70.6 |
+|         DRS          |  AAAI2021   |    VGG16     |  ResNet101 DeepLabv2   | **I** | Saliency | **?** | 71.2 | 71.4 |
+|                      |             |           |                      |       |                                         |           |      |      |
 |                      |             |               |                         |       |                         |                         |      |      |
 | AffinityNet | CVPR2018 | ResNet38 | ResNet38 | **I** | - | **?** | 61.7 | 63.7 |
 | ICD | CVPR2020 | VGG16 | ResNet101 DeepLabv1 | **I** | - | **?** | 64.1 | 64.3 |
@@ -65,8 +80,11 @@
 |         RRM          |  AAAI2020   | ResNet38 |  ResNet101 DeepLabv2   | **I** |            -            | **?** | 66.3 | 66.5 |
 |    BES  |  ECCV2020   |   ResNet50    |  ResNet101 DeepLabv2   | **I** |            -            |            **?**            | 65.7 | 66.6 |
 |    CONTA (+SEAM)     | NeurIPS2020 | ResNet38 |  ResNet101 DeepLabv2   | **I** |            -            |            **?**            | 66.1 | 66.7 |
+| Ru *et al.* | IJCAI2021 | ResNet101 | ResNet101 DeepLabv2 | **I** | - | **?** | 67.2 | 67.3 |
 | WSGCN (IRN) | ICME2021 | ResNet50 | ResNet101 DeepLabv2 | **I** | - | **I** | 66.7 | 68.8 |
-|        AdvCAM        |  CVPR2021   |   ResNet-50   |  ResNet101 DeepLabv2   | **I** |            -            |            ***I***            | 68.1 | 68.0 |
+|         CPN          |  ICCV2021   | ResNet38  |  ResNet38 DeepLabv1  | **I** |                    -                    |   **?**   | 67.8 | 68.5 |
+| RPNet | arxiv2021 | ResNet101 | ResNet50 DeepLabv2 | **I** | - | ***I*** | 68.0 | 68.2 |
+|        AdvCAM        |  CVPR2021   |   ResNet50   |  ResNet101 DeepLabv2   | **I** |            -            |            ***I***            | 68.1 | 68.0 |
 | WSGCN (IRN) | ICME2021 | ResNet50 | ResNet101 DeepLabv2 | **I** | - | **I+C** | 68.7 | 69.3 |
 
 ### 1.2. Results on MS-COCO dataset
@@ -77,25 +95,22 @@
 
 ## 2.1. supervised by image tags (I)
 
-**2016**
+**2021**
 
-- **SEC:** "Seed, expand and constrain: Three principles for weakly-supervised image segmentation" *ECCV2016*
-
-**2018**
-
-- **DSRG:** "Weakly-supervised semantic segmentation network with deep seeded region growing" *CVPR2018*
-- **AffinityNet:** "Learning Pixel-level Semantic Affinity with Image-level Supervision for Weakly Supervised Semantic Segmentation" *CVPR2018*
-- **Fan *et al.*:** "Associating inter-image salient instances for weakly supervised semantic segmentation" *ECCV2018*
-
-**2019**
-
-- **IRN:** "Weakly Supervised Learning of Instance Segmentation with Inter-pixel Relations" *CVPR2019*
-
-- **Ficklenet:** " Ficklenet: Weakly and semi-supervised semantic image segmentation using stochastic inference" *CVPR2019*
-- **Lee *et al.*:** "Frame-to-Frame Aggregation of Active Regions in Web Videos for Weakly Supervised Semantic Segmentation" *ICCV2019*
-- **OAA:** "Integral Object Mining via Online Attention Accumulation" *ICCV2019*
-- **SSDD:** "Self-supervised difference detection for weakly-supervised semantic segmentation" *ICCV2019*
-- **Method:** "" *2019*
+- **SPML:** "Universal Weakly Supervised Segmentation by Pixel-to-Segment Contrastive Learning" *ICLR2021*
+- **Li *et al.*:** "Group-Wise Semantic Mining for Weakly Supervised Semantic Segmentation" *AAAI2021*
+- **DRS:** "Discriminative Region Suppression for Weakly-Supervised Semantic Segmentation" *AAAI2021*
+- **AdvCAM:** " Anti-Adversarially Manipulated Attributions for Weakly and Semi-Supervised Semantic Segmentation" *CVPR2021*
+- **Yao et al.  **: "Non-Salient Region Object Mining for Weakly Supervised Semantic Segmentation" *CVPR2021*
+- **EDAM:** "Embedded Discriminative Attention Mechanism for Weakly Supervised Semantic Segmentation" *CVPR2021*
+- **WSGCN:** "Weakly-Supervised Image Semantic Segmentation Using Graph Convolutional Networks" *ICME2021*
+- **PuzzleCAM:** "Puzzle-CAM Improved localization via matching partial and full features" *2021arXiv*
+- **CDA:** "Context Decoupling Augmentation for Weakly Supervised Semantic Segmentation" *2021arXiv*
+- **Ru *et al.*:** "Learning Visual Words for Weakly-Supervised Semantic Segmentation" *IJCAI2021*
+- **AuxSegNet:** "Leveraging Auxiliary Tasks with Affinity Learning for Weakly Supervised Semantic Segmentation" *ICCV2021*
+- **CPN:** "Complementary Patch for Weakly Supervised Semantic Segmentation" *ICCV2021*
+- **RPNet:** "Cross-Image Region Mining with Region Prototypical Network for Weakly Supervised Segmentation" *arxiv2021*
+- **Method:** "" *2021*
 
 **2020**
 
@@ -108,51 +123,57 @@
 - **MCIS:** "Mining Cross-Image Semantics for Weakly Supervised Semantic Segmentation" *2020*
 - **BES:** "Weakly Supervised Semantic Segmentation with Boundary Exploration" *ECCV2020*
 - **CONTA:** "Causal intervention for weakly-supervised semantic segmentation" *NeurIPS2020*
-
-**2021**
-
-- **SPML:** "Universal Weakly Supervised Segmentation by Pixel-to-Segment Contrastive Learning" *ICLR2021*
-- **Li *et al.*:** "Group-Wise Semantic Mining for Weakly Supervised Semantic Segmentation" *AAAI2021*
-- **DRS:** "Discriminative Region Suppression for Weakly-Supervised Semantic Segmentation" *AAAI2021*
-- **AdvCAM:** " Anti-Adversarially Manipulated Attributions for Weakly and Semi-Supervised Semantic Segmentation" *CVPR2021*
-- **Yao et al.  **: "Non-Salient Region Object Mining for Weakly Supervised Semantic Segmentation" *CVPR2021*
-- **WSGCN:** "Weakly-Supervised Image Semantic Segmentation Using Graph Convolutional Networks" *ICME2021*
-- **Method:** "" *2021*
-
-### 2.2. Supervised by bounding box (B)
-
-**2015**
-
-- **WSSL:** "Weakly-and semi-supervised learning of a deep convolutional network for semantic image segmentation" *ICCV2015*
+- **Method:** "Find it if You Can: End-to-End Adversarial Erasing for Weakly-Supervised Semantic Segmentation" *2020arXiv*
+- **Zhang *et al.*:** "Splitting vs. Merging: Mining Object Regions with Discrepancy and Intersection Loss for Weakly Supervised Semantic Segmentation" *ECCV2020*
 
 **2019**
 
+- **IRN:** "Weakly Supervised Learning of Instance Segmentation with Inter-pixel Relations" *CVPR2019*
+- **Ficklenet:** " Ficklenet: Weakly and semi-supervised semantic image segmentation using stochastic inference" *CVPR2019*
+- **Lee *et al.*:** "Frame-to-Frame Aggregation of Active Regions in Web Videos for Weakly Supervised Semantic Segmentation" *ICCV2019*
+- **OAA:** "Integral Object Mining via Online Attention Accumulation" *ICCV2019*
+- **SSDD:** "Self-supervised difference detection for weakly-supervised semantic segmentation" *ICCV2019*
+
+**2018**
+
+- **DSRG:** "Weakly-supervised semantic segmentation network with deep seeded region growing" *CVPR2018*
+- **AffinityNet:** "Learning Pixel-level Semantic Affinity with Image-level Supervision for Weakly Supervised Semantic Segmentation" *CVPR2018*
+- **GAIN:** " Tell me where to look: Guided attention inference network" *CVPR2018*
+- **AISI:** "Associating inter-image salient instances for weakly supervised semantic segmentation" *ECCV2018*
+- **SeeNet:** "Self-Erasing Network for Integral Object Attention" *NeurIPS2018*
+- **Method:** "" *2018*
+
+**2017**
+
+- **CrawlSeg:** "Weakly Supervised Semantic Segmentation using Web-Crawled Videos" *CVPR2017*
+- **WebS-i2:** "Webly supervised semantic segmentation" *CVPR2017*
+- **Oh *et al*.:** "Exploiting saliency for object segmentation from image level labels" *CVPR2017*
+- **TPL:** "Two-phase learning for weakly supervised object localization" *ICCV2017*
+
+**2016**
+
+- **SEC:** "Seed, expand and constrain: Three principles for weakly-supervised image segmentation" *ECCV2016*
+- **AF-SS:** "Augmented Feedback in Semantic Segmentation under Image Level Supervision" *2016*
+
+### 2.2. Supervised by bounding box (B)
+
+- **WSSL:** "Weakly-and semi-supervised learning of a deep convolutional network for semantic image segmentation" *ICCV2015*
+- **Boxsup:** "Boxsup: Exploiting bounding boxes to supervise convolutional networks for semantic segmentation" *ICCV2015*
+- **Scribblesup:** "Scribblesup: Scribble-supervised convolutional networks for semantic segmentation" *CVPR2016*
 - **Song *et al.*:** "Box-driven class-wise region masking and filling rate guided loss for weakly supervised semantic segmentation" *CVPR2019*
-
-**2021**
-
 - **BBAM:** "BBAM: Bounding Box Attribution Map for Weakly Supervised Semantic and Instance Segmentation" *CVPR2021*
 - **Oh *et al.*:** "Ba ckground-Aware Pooling and Noise-Aware Loss for Weakly-Supervised Semantic Segmentation" CVPR2021
 - **SPML:** "Universal Weakly Supervised Segmentation by Pixel-to-Segment Contrastive Learning" *ICLR2021*
 
 ### 2.3. Supervised by scribble (S)
 
-**2018**
-
 - **NormalCut :** "Normalized cut loss for weakly-supervised cnn segmentation" *CVPR2018*
 - **KernelCut :** "On regularized losses for weakly-supervised cnn segmentation" *ECCV2018*
-
-**2019**
-
 - **BPG:**  "Boundary Perception Guidance: A Scribble-Supervised Semantic Segmentation Approach" *IJCAI2019*
-
-**2020**
-
-- **Method:** "" *2020*
-
-**2021**
-
 - **SPML:** "Universal Weakly Supervised Segmentation by Pixel-to-Segment Contrastive Learning" *ICLR2021*
+- **DFR:** "Dynamic Feature Regularized Loss for Weakly Supervised Semantic Segmentation" *arxiv2021*
+- **A2GNN:** "Affinity attention graph neural network for weakly supervised semantic segmentation" *TPAMI2021*
+- **Method:** "" *2021*
 
 ### 2.4. Supervised by point (P)
 
