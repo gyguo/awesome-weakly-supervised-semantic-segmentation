@@ -13,7 +13,7 @@
 ### 1.1. Results on PASCAL VOC 2012 dataset
 
 - For each method, I will provide the name of baseline in brackets if it has. 
-- **Sup.:** I-image-level class label, B-bounding box label, S-scribble label, P-point label.
+- **Sup.:** **I**-image-level class label, **B**-bounding box label, **S**-scribble label, **P**-point label.
 - **Bac. C:** Method for generating pseudo label, or backbone of the classification network.
 - **Arc. S:** backbone and method of the segmentation network. 
 - **Pre.s :**  The dataset used to pre-train the **segmentation** network, **"*I*"** denotes ImageNet, "***C***" denotes COCO. **Note that many works use COCO pre-trained DeepLab model but not mentioned in the paper.** 
@@ -22,31 +22,13 @@
 
 |        Method        |    Pub.     |    Bac. C     |         Arc. S          | Sup.  |       Extra data        |       Pre.S       | val  | test |
 | :------------------: | :---------: | :-----------: | :---------------------: | :---: | :---------------------: | :--: | -------------------- | -------------------- |
-|        Boxsup        |  ICCV2015   |           |                      |       |                                         |           |      |      |
-|         BBAM         |  CVPR2021   |     ?     | ResNet101 DeepLabv2  | **B** |                   MCG                   |  ***I***  | 73.7 | 73.7 |
-|         WSSL         |  ICCV2015   |      -      |    VGG16 DeepLabv1     | **B** |            -            |            ***I***            | 60.6 | 62.2 |
-|    Song *et al.*     |  CVPR2019   |      -      |  ResNet101  DeepLabv1  | **B** |            -            |            ***I***            | 70.2 |  -   |
-| SPML (Song *et al.*) |  ICLR2021   |      -      |  ResNet101  DeepLabv2  | **B** |            -            |            ***I***            | 73.5 | 74.7 |
-| Oh *et al.* | CVPR2021 | ResNet101 | ResNet101 DeepLabv2 | **B** | - | ***I+C*** | 74.6 | 76.1 |
-|                      |             |               |                         |       |                         |                         |      |      |
-| Scribblesup | | | | **S** | | | | |
-|      NormalCut       |  CVPR2018   |       -       |  ResNet101 DeepLabv1   | **S** |            Saliency            |            **?**            | 74.5 |  -   |
-|      KernelCut       |  ECCV2018   |       -       |  ResNet101 DeepLabv1   | **S** |            -            |            **?**            | 75.0 |  -   |
-|         BPG          |  IJCAI2019  |       -       |  ResNet101 DeepLabv2   | **S** |            -            |            **?**            | 76.0 |  -   |
-|   SPML (KernelCut)   |  ICLR2021   |       -       |  ResNet101 DeepLabv2  | **S** |            -            |  ***I***  | 76.1 |  -   |
-| A2GNN | TPAMI2021 | - | ? | **S** | - | **?** | 76.2 | 76.1 |
-| DFR | arxiv2021 | - | UperNet+Swin  Transformer | **S** | 22KImageNet | - | 82.8 | 82.9 |
-|                      |             |               |  |       |                         |                         |      |      |
-|      WhatsPoint      |  ECCV2016   |  -  |            VGG16 FCN            | **P** |    Objectness     | ***I*** | 46.1 |  -   |
-|         PCAM         |  arxiv2020  |   ResNet50   |      DeepLabv3+       | **P** |            -            |            **?**            | 70.5 |  -   |
-|  |  |  |  |  |  |  |  |  |
 | AF-SS | ECCV2016 |  |  | **I** | Saliency |  | 52.6 | 52.7 |
 | CrawlSeg | CVPR2017 |               |                         | **I** | YouTube Videos |                         | 58.1 | 58.7 |
 | SeeNet | NeurIPS2018 | | | **I** | Saliency | | 63.1 | 62.8 |
 | WebS-i2 | CVPR2017 | | | **I** | Web | |  |  |
-| TPL | ICCV2017 | | | **I** |  | |  |  |
-| GAIN | CVPR2018 | | | **I** |  | |  |  |
-| Oh *et al*. | CVPR2017 | | | **I** |  | |  |  |
+| TPL | ICCV2017 | | | **I** | Saliency | |  |  |
+| GAIN | CVPR2018 | | | **I** | Saliency | |  |  |
+| Oh *et al*. | CVPR2017 | | | **I** | Saliency | |  |  |
 | SEC | ECCV2016 | VGG16 | VGG16 DeepLabv1 | **I** | Saliency | ***I*** | 50.7 | 51.7 |
 |      DSRG (SEC)      |  CVPR2018   | VGG16 |  ResNet101 DeepLabv2   | **I** |     Saliency      |     ***I***     | 61.4 | 63.2 |
 | AISI | ECCV2018 | ResNet101 | ResNet101 DeepLabv2 | **I** | Saliency | **?** | 63.6 | 64.5 |
@@ -68,7 +50,6 @@
 | Yao et al. | CVPR2021 | VGG16 | ResNet101 DeepLabv2 | **I** | Saliency | ***I+C*** | 70.4 | 70.2 |
 | EDAM | CVPR2021 | ResNet38 | ResNet101 DeepLabv2 | **I** | Saliency | **?** | 70.9 | 70.6 |
 |         DRS          |  AAAI2021   |    VGG16     |  ResNet101 DeepLabv2   | **I** | Saliency | **?** | 71.2 | 71.4 |
-|                      |             |           |                      |       |                                         |           |      |      |
 |                      |             |               |                         |       |                         |                         |      |      |
 | AffinityNet | CVPR2018 | ResNet38 | ResNet38 | **I** | - | **?** | 61.7 | 63.7 |
 | ICD | CVPR2020 | VGG16 | ResNet101 DeepLabv1 | **I** | - | **?** | 64.1 | 64.3 |
@@ -86,6 +67,29 @@
 | RPNet | arxiv2021 | ResNet101 | ResNet50 DeepLabv2 | **I** | - | ***I*** | 68.0 | 68.2 |
 |        AdvCAM        |  CVPR2021   |   ResNet50   |  ResNet101 DeepLabv2   | **I** |            -            |            ***I***            | 68.1 | 68.0 |
 | WSGCN (IRN) | ICME2021 | ResNet50 | ResNet101 DeepLabv2 | **I** | - | **I+C** | 68.7 | 69.3 |
+|  |  |  |  |  |  |  |  |  |
+| | | | | | | | | |
+| Boxsup | CVPR2021ICCV2015 |  | ResNet101 DeepLabv2 | **B** | MCG | ***I*** | 73.7 | 73.7 |
+|        Boxsup        |  ICCV2015   |           |                      |       |                                         |           |      |      |
+|         BBAM         |  CVPR2021   |     ?     | ResNet101 DeepLabv2  | **B** |                   MCG                   |  ***I***  | 73.7 | 73.7 |
+|         WSSL         |  ICCV2015   |      -      |    VGG16 DeepLabv1     | **B** |            -            |            ***I***            | 60.6 | 62.2 |
+|    Song *et al.*     |  CVPR2019   |      -      |  ResNet101  DeepLabv1  | **B** |            -            |            ***I***            | 70.2 |  -   |
+| SPML (Song *et al.*) |  ICLR2021   |      -      |  ResNet101  DeepLabv2  | **B** |            -            |            ***I***            | 73.5 | 74.7 |
+| Oh *et al.* | CVPR2021 | ResNet101 | ResNet101 DeepLabv2 | **B** | - | ***I+C*** | 74.6 | 76.1 |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+| Scribblesup | | | | **S** | | | | |
+|      NormalCut       |  CVPR2018   |       -       |  ResNet101 DeepLabv1   | **S** |            Saliency            |            **?**            | 74.5 |  -   |
+|      KernelCut       |  ECCV2018   |       -       |  ResNet101 DeepLabv1   | **S** |            -            |            **?**            | 75.0 |  -   |
+|         BPG          |  IJCAI2019  |       -       |  ResNet101 DeepLabv2   | **S** |            -            |            **?**            | 76.0 |  -   |
+|   SPML (KernelCut)   |  ICLR2021   |       -       |  ResNet101 DeepLabv2  | **S** |            -            |  ***I***  | 76.1 |  -   |
+| A2GNN | TPAMI2021 | - | ? | **S** | - | **?** | 76.2 | 76.1 |
+| DFR | arxiv2021 | - | UperNet+Swin  Transformer | **S** | 22KImageNet | - | 82.8 | 82.9 |
+|  |  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |  |
+|      WhatsPoint      |  ECCV2016   |  -  |            VGG16 FCN            | **P** |    Objectness     | ***I*** | 46.1 |  -   |
+|         PCAM         |  arxiv2020  |   ResNet50   |      DeepLabv3+       | **P** |            -            |            **?**            | 70.5 |  -   |
+|  |  |  |  |  |  |  |  |  |
 
 ### 1.2. Results on MS-COCO dataset
 
