@@ -22,6 +22,13 @@
 
 |        Method        |    Pub.     |    Bac. C     |         Arc. S          | Sup.  |       Extra data        |       Pre.S       | val  | test |
 | :------------------: | :---------: | :-----------: | :---------------------: | :---: | :---------------------: | :--: | -------------------- | -------------------- |
+| AF-SS | ECCV16 |  |  | **I** | Saliency |  | 52.6 | 52.7 |
+| CrawlSeg | CVPR17 |               |                         | **I** | YouTube Videos |                         | 58.1 | 58.7 |
+| SeeNet | NeurIPS18 | | | **I** | Saliency | | 63.1 | 62.8 |
+| WebS-i2 | CVPR17 | | | **I** | Web | |  |  |
+| TPL | ICCV17 | | | **I** | Saliency | |  |  |
+| GAIN | CVPR18 | | | **I** | Saliency | |  |  |
+| Oh *et al*. | CVPR17 | | | **I** | Saliency | |  |  |
 | SEC | ECCV16 | VGG16 | VGG16 DeepLabv1 | **I** | Saliency | ***I*** | 50.7 | 51.7 |
 |      DSRG (SEC)      |  CVPR18   | VGG16 |  ResNet101 DeepLabv2   | **I** |     Saliency      |     ***I***     | 61.4 | 63.2 |
 | AISI | ECCV18 | ResNet101 | ResNet101 DeepLabv2 | **I** | Saliency | **?** | 63.6 | 64.5 |
@@ -62,6 +69,7 @@
 | WSGCN (IRN) | ICME21 | ResNet50 | ResNet101 DeepLabv2 | **I** | - | **I+C** | 68.7 | 69.3 |
 |  |  |  |  |  |  |  |  |  |
 | | | | | | | | | |
+|        Boxsup        |  ICCV15   |           |                      |       |                                         |           |      |      |
 |         BBAM         |  CVPR21   |     ?     | ResNet101 DeepLabv2  | **B** |                   MCG                   |  ***I***  | 73.7 | 73.7 |
 |         WSSL         |  ICCV15   |      -      |    VGG16 DeepLabv1     | **B** |            -            |            ***I***            | 60.6 | 62.2 |
 |    Song *et al.*     |  CVPR19   |      -      |  ResNet101  DeepLabv1  | **B** |            -            |            ***I***            | 70.2 |  -   |
@@ -154,6 +162,7 @@
 
 - **WSSL:** "Weakly-and semi-supervised learning of a deep convolutional network for semantic image segmentation" *ICCV2015*
 - **Boxsup:** "Boxsup: Exploiting bounding boxes to supervise convolutional networks for semantic segmentation" *ICCV2015*
+- **Scribblesup:** "Scribblesup: Scribble-supervised convolutional networks for semantic segmentation" *CVPR2016*
 - **Song *et al.*:** "Box-driven class-wise region masking and filling rate guided loss for weakly supervised semantic segmentation" *CVPR2019*
 - **BBAM:** "BBAM: Bounding Box Attribution Map for Weakly Supervised Semantic and Instance Segmentation" *CVPR2021*
 - **Oh *et al.*:** "Ba ckground-Aware Pooling and Noise-Aware Loss for Weakly-Supervised Semantic Segmentation" CVPR2021
@@ -161,7 +170,6 @@
 
 ### 2.3. Supervised by scribble (S)
 
-- **Scribblesup:** "Scribblesup: Scribble-supervised convolutional networks for semantic segmentation" *CVPR2016*
 - **NormalCut :** "Normalized cut loss for weakly-supervised cnn segmentation" *CVPR2018*
 - **KernelCut :** "On regularized losses for weakly-supervised cnn segmentation" *ECCV2018*
 - **BPG:**  "Boundary Perception Guidance: A Scribble-Supervised Semantic Segmentation Approach" *IJCAI2019*
