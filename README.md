@@ -4,17 +4,24 @@
 
 # Table of Contents
 
-- [1. Performance](#1-performance-list)
-  + [1.1. Results on PASCAL VOC 2012 dataset](#11-results-on-pascal-voc-2012-dataset)
-  + [1.2. Results on MS-COCO dataset](#12-results-on-ms-coco-dataset)
+- [1. Performance list](#1-performance-list)
+    + [1.1. Results on PASCAL VOC 2012 dataset](#11-results-on-pascal-voc-2012-dataset)
+    + [1.2. Results on MS-COCO dataset](#12-results-on-ms-coco-dataset)
 - [2. Paper List](#2-paper-list)
-  + [2.1. supervised by image tags (I)](#21-supervised-by-image-tags--i-)
-  + [2.2. Supervised by bounding box (B)](#22-supervised-by-bounding-box--b-)
-  + [2.3. Supervised by scribble (S)](#23-supervised-by-scribble--s-)
-  + [2.4. Supervised by point (P)](#24-supervised-by-point--p-)
+    + [2.1. supervised by image tags (I)](#21-supervised-by-image-tags--i-)
+        * [2022](#2022)
+        * [2021](#2021)
+        * [2020](#2020)
+        * [2019](#2019)
+        * [2018](#2018)
+        * [2017](#2017)
+        * [2016](#2016)
+    + [2.2. Supervised by bounding box (B)](#22-supervised-by-bounding-box--b-)
+    + [2.3. Supervised by scribble (S)](#23-supervised-by-scribble--s-)
+    + [2.4. Supervised by point (P)](#24-supervised-by-point--p-)
 - [3. Dataset](#3-dataset)
-  + [PASCAL VOC 2012](#pascal-voc-2012)
-  + [MS COCO](#ms-coco)
+        * [PASCAL VOC 2012](#pascal-voc-2012)
+        * [MS COCO](#ms-coco)
 
 ------
 
