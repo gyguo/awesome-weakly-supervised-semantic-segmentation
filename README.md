@@ -6,8 +6,6 @@
 
 ------
 
-
-
 # 1. Performance
 
 ### 1.1. Results on PASCAL VOC 2012 dataset
@@ -20,75 +18,96 @@
 - For methods that use multiple backbones, I only reports the results of **ResNet101**.
 - **"-"** indicates no fully-supervised model is utilized, **"?"** indicates the corresponding item is not mentioned in the paper.
 
-|        Method        |    Pub.     |    Bac. C     |         Arc. S          | Sup.  |       Extra data        |       Pre.S       | val  | test |
-| :------------------: | :---------: | :-----------: | :---------------------: | :---: | :---------------------: | :--: | -------------------- | -------------------- |
-| SEC | ECCV16 | VGG16 | VGG16 DeepLabv1 | **I** | Saliency | ***I*** | 50.7 | 51.7 |
-|      DSRG (SEC)      |  CVPR18   | VGG16 |  ResNet101 DeepLabv2   | **I** |     Saliency      |     ***I***     | 61.4 | 63.2 |
-| AISI | ECCV18 | ResNet101 | ResNet101 DeepLabv2 | **I** | Saliency | **?** | 63.6 | 64.5 |
-|   Ficklenet (DSRG)   |  CVPR19   | VGG16 |  ResNet101 DeepLabv2   | **I** |     Instance-level Saliency     | ***I*** | 64.9 | 65.3 |
-| AISI | ECCV18 | ResNet101 | ResNet101 DeepLabv2 | **I** | Instance-level Saliency<br/>24KImageNet | **?** | 64.5 | 65.6 |
-|         OAA         |   ICCV19   | VGG16 | ResNet101 DeepLabv1 | **I** | Saliency | ***I*** | 65.2 | 66.4 |
-| Zhang *et al.* | ECCV20 | ResNet50 | ResNet50 DeepLabv2 | **I** | Saliency |   **?**   | 66.6 | 66.7 |
-|     Fan *et al.*     |  ECCV20   | ResNet38 |  ResNet101 DeepLabv1   | **I** |     Saliency      | **?** | 67.2 | 66.7 |
-|     MCIS     |  ECCV20   |    VGG16     |  ResNet101 DeepLabv1   | **I** |     Saliency      |   **?** | 66.2 | 66.9 |
-| Lee *et al.* | ICCV19 | VGG16 | ResNet101 DeepLabv2 | **I** | Saliency Web | ***I*** | 66.5 | 67.4 |
-|         LIID         |  PAMI20   |   ResNet50   |  ResNet101 DeepLabv2   | **I** |     Saliency      | **?** | 66.5 | 67.5 |
-|     MCIS     |  ECCV20   |    VGG16     |  ResNet101 DeepLabv1   | **I** | Saliency Web | **?** | 67.7 | 67.5 |
-| ICD | CVPR20 | VGG16 | ResNet101 DeepLabv1 | **I** | Saliency | **?** | 67.8 | 68.0 |
-| LIID | PAMI20 | ResNet50 | ResNet101 DeepLabv2 | **I** | Saliency<br />24KImageNet | **?** | 67.8 | 68.3 |
-| Li *et al.* | AAAI21 | ResNet101 | ResNet101 DeepLabv2 | **I** | Saliency | **?** | 68.2 | 68.5 |
-| Yao et al. | CVPR21 | VGG16 | ResNet101 DeepLabv2 | **I** | Saliency | ***I*** | 68.3 | 68.5 |
-| AuxSegNet | ICCV21 | ResNet38 | - | **I** | Saliency | **?** | 69.0 | 68.6 |
-| SPML (Ficklenet) | ICLR21 | VGG16 | ResNet101 DeepLabv2 | **I** | Saliency | ***I*** | 69.5 | 71.6 |
-| Yao et al. | CVPR21 | VGG16 | ResNet101 DeepLabv2 | **I** | Saliency | ***I+C*** | 70.4 | 70.2 |
-| EDAM | CVPR21 | ResNet38 | ResNet101 DeepLabv2 | **I** | Saliency | **?** | 70.9 | 70.6 |
-|         DRS          |  AAAI21   |    VGG16     |  ResNet101 DeepLabv2   | **I** | Saliency | **?** | 71.2 | 71.4 |
-|                      |             |               |                         |       |                         |                         |      |      |
-| AffinityNet | CVPR18 | ResNet38 | ResNet38 | **I** | - | **?** | 61.7 | 63.7 |
-| ICD | CVPR20 | VGG16 | ResNet101 DeepLabv1 | **I** | - | **?** | 64.1 | 64.3 |
-|         IRN          |  CVPR19   | ResNet50 | ResNet50 DeepLabv2 | **I** | - | ***I*** | 63.5 | 64.8 |
-| IAL | IJCV20 | ResNet? | ResNet? | **I** | - | ***I*** | 64.3 | 65.4 |
-|         SSDD (PSA)         |  ICCV19   | ResNet38 | ResNet38 | **I** |            -            |            ***I***            | 64.9 | 65.5 |
-|         SEAM         |  CVPR20   | ResNet38 | ResNet38 DeepLabv2 | **I** |            -            |            ***I***            | 64.5 | 65.7 |
-|    Chang *et al.*    |  CVPR20   | ResNet38 |  ResNet101 DeepLabv2   | **I** |            -            |            **?**            | 66.1 | 65.9 |
-|         RRM          |  AAAI20   | ResNet38 |  ResNet101 DeepLabv2   | **I** |            -            | **?** | 66.3 | 66.5 |
-|    BES  |  ECCV20   |   ResNet50    |  ResNet101 DeepLabv2   | **I** |            -            |            **?**            | 65.7 | 66.6 |
-|    CONTA (+SEAM)     | NeurIPS20 | ResNet38 |  ResNet101 DeepLabv2   | **I** |            -            |            **?**            | 66.1 | 66.7 |
-| Ru *et al.* | IJCAI21 | ResNet101 | ResNet101 DeepLabv2 | **I** | - | **?** | 67.2 | 67.3 |
-| WSGCN (IRN) | ICME21 | ResNet50 | ResNet101 DeepLabv2 | **I** | - | **I** | 66.7 | 68.8 |
-|         CPN          |  ICCV21   | ResNet38  |  ResNet38 DeepLabv1  | **I** |                    -                    |   **?**   | 67.8 | 68.5 |
-| RPNet | arxiv21 | ResNet101 | ResNet50 DeepLabv2 | **I** | - | ***I*** | 68.0 | 68.2 |
-|        AdvCAM        |  CVPR21   |   ResNet50   |  ResNet101 DeepLabv2   | **I** |            -            |            ***I***            | 68.1 | 68.0 |
-| WSGCN (IRN) | ICME21 | ResNet50 | ResNet101 DeepLabv2 | **I** | - | **I+C** | 68.7 | 69.3 |
-|  |  |  |  |  |  |  |  |  |
-| | | | | | | | | |
-|         BBAM         |  CVPR21   |     ?     | ResNet101 DeepLabv2  | **B** |                   MCG                   |  ***I***  | 73.7 | 73.7 |
-|         WSSL         |  ICCV15   |      -      |    VGG16 DeepLabv1     | **B** |            -            |            ***I***            | 60.6 | 62.2 |
-|    Song *et al.*     |  CVPR19   |      -      |  ResNet101  DeepLabv1  | **B** |            -            |            ***I***            | 70.2 |  -   |
-| SPML (Song *et al.*) |  ICLR21   |      -      |  ResNet101  DeepLabv2  | **B** |            -            |            ***I***            | 73.5 | 74.7 |
-| Oh *et al.* | CVPR21 | ResNet101 | ResNet101 DeepLabv2 | **B** | - | ***I+C*** | 74.6 | 76.1 |
-|  |  |  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |  |  |
-| Scribblesup | | | | **S** | | | | |
-|      NormalCut       |  CVPR18   |       -       |  ResNet101 DeepLabv1   | **S** |            Saliency            |            **?**            | 74.5 |  -   |
-|      KernelCut       |  ECCV18   |       -       |  ResNet101 DeepLabv1   | **S** |            -            |            **?**            | 75.0 |  -   |
-|         BPG          |  IJCAI19  |       -       |  ResNet101 DeepLabv2   | **S** |            -            |            **?**            | 76.0 |  -   |
-|   SPML (KernelCut)   |  ICLR21   |       -       |  ResNet101 DeepLabv2  | **S** |            -            |  ***I***  | 76.1 |  -   |
-| A2GNN | TPAMI21 | - | ? | **S** | - | **?** | 76.2 | 76.1 |
-| DFR | arxiv21 | - | UperNet+Swin  Transformer | **S** | 22KImageNet | - | 82.8 | 82.9 |
-|  |  |  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |  |  |
-|      WhatsPoint      |  ECCV16   |  -  |            VGG16 FCN            | **P** |    Objectness     | ***I*** | 46.1 |  -   |
-|         PCAM         |  arxiv20  |   ResNet50   |      DeepLabv3+       | **P** |            -            |            **?**            | 70.5 |  -   |
-|  |  |  |  |  |  |  |  |  |
+| Method               | Pub.      | Bac. C     | Arc. S                    | Sup.  | Extra data                              | Pre.S     | val  | test |
+|:--------------------:|:---------:|:----------:|:-------------------------:|:-----:|:---------------------------------------:|:---------:| ---- | ---- |
+| **w/ saliency**      |           |            |                           |       |                                         |           |      |      |
+| SEC                  | ECCV16    | VGG16      | VGG16 DeepLabv1           | **I** | Saliency                                | ***I***   | 50.7 | 51.7 |
+| DSRG (SEC)           | CVPR18    | VGG16      | ResNet101 DeepLabv2       | **I** | Saliency                                | ***I***   | 61.4 | 63.2 |
+| AISI                 | ECCV18    | ResNet101  | ResNet101 DeepLabv2       | **I** | Saliency                                | **?**     | 63.6 | 64.5 |
+| Ficklenet (DSRG)     | CVPR19    | VGG16      | ResNet101 DeepLabv2       | **I** | Instance-level Saliency                 | ***I***   | 64.9 | 65.3 |
+| AISI                 | ECCV18    | ResNet101  | ResNet101 DeepLabv2       | **I** | Instance-level Saliency<br/>24KImageNet | **?**     | 64.5 | 65.6 |
+| OAA                  | ICCV19    | VGG16      | ResNet101 DeepLabv1       | **I** | Saliency                                | ***I***   | 65.2 | 66.4 |
+| Zhang *et al.*       | ECCV20    | ResNet50   | ResNet50 DeepLabv2        | **I** | Saliency                                | **?**     | 66.6 | 66.7 |
+| Fan *et al.*         | ECCV20    | ResNet38   | ResNet101 DeepLabv1       | **I** | Saliency                                | **?**     | 67.2 | 66.7 |
+| MCIS                 | ECCV20    | VGG16      | ResNet101 DeepLabv1       | **I** | Saliency                                | **?**     | 66.2 | 66.9 |
+| Lee *et al.*         | ICCV19    | VGG16      | ResNet101 DeepLabv2       | **I** | Saliency Web                            | ***I***   | 66.5 | 67.4 |
+| LIID                 | PAMI20    | ResNet50   | ResNet101 DeepLabv2       | **I** | Saliency                                | **?**     | 66.5 | 67.5 |
+| MCIS                 | ECCV20    | VGG16      | ResNet101 DeepLabv1       | **I** | Saliency Web                            | **?**     | 67.7 | 67.5 |
+| ICD                  | CVPR20    | VGG16      | ResNet101 DeepLabv1       | **I** | Saliency                                | **?**     | 67.8 | 68.0 |
+| LIID                 | PAMI20    | ResNet50   | ResNet101 DeepLabv2       | **I** | Saliency<br />24KImageNet               | **?**     | 67.8 | 68.3 |
+| Li *et al.*          | AAAI21    | ResNet101  | ResNet101 DeepLabv2       | **I** | Saliency                                | **?**     | 68.2 | 68.5 |
+| Yao et al.           | CVPR21    | VGG16      | ResNet101 DeepLabv2       | **I** | Saliency                                | ***I***   | 68.3 | 68.5 |
+| AuxSegNet            | ICCV21    | ResNet38   | -                         | **I** | Saliency                                | **?**     | 69.0 | 68.6 |
+| SPML (Ficklenet)     | ICLR21    | VGG16      | ResNet101 DeepLabv2       | **I** | Saliency                                | ***I***   | 69.5 | 71.6 |
+| Yao et al.           | CVPR21    | VGG16      | ResNet101 DeepLabv2       | **I** | Saliency                                | ***I+C*** | 70.4 | 70.2 |
+| WegFormer            | CVPR22    | Deit-B     | ResNet101 DeepLabv **?**  | **I** | Saliency                                | ***I***   | 70.5 | 70.3 |
+| WegFormer            | CVPR22    | Deit-B     | ResNet101 DeepLabv **?**  | **I** | Saliency                                | ***I+C*** | 70.9 | 70.5 |
+| EDAM                 | CVPR21    | ResNet38   | ResNet101 DeepLabv2       | **I** | Saliency                                | **?**     | 70.9 | 70.6 |
+| DRS                  | AAAI21    | VGG16      | ResNet101 DeepLabv2       | **I** | Saliency                                | ***I+C*** | 71.2 | 71.4 |
+|                      |           |            |                           |       |                                         |           |      |      |
+| **w/o saliency**     |           |            |                           |       |                                         |           |      |      |
+| AffinityNet          | CVPR18    | ResNet38   | ResNet38                  | **I** | -                                       | **?**     | 61.7 | 63.7 |
+| ICD                  | CVPR20    | VGG16      | ResNet101 DeepLabv1       | **I** | -                                       | **?**     | 64.1 | 64.3 |
+| IRN                  | CVPR19    | ResNet50   | ResNet50 DeepLabv2        | **I** | -                                       | ***I***   | 63.5 | 64.8 |
+| IAL                  | IJCV20    | ResNet?    | ResNet?                   | **I** | -                                       | ***I***   | 64.3 | 65.4 |
+| SSDD (PSA)           | ICCV19    | ResNet38   | ResNet38                  | **I** | -                                       | ***I***   | 64.9 | 65.5 |
+| SEAM                 | CVPR20    | ResNet38   | ResNet38 DeepLabv2        | **I** | -                                       | ***I***   | 64.5 | 65.7 |
+| Chang *et al.*       | CVPR20    | ResNet38   | ResNet101 DeepLabv2       | **I** | -                                       | **?**     | 66.1 | 65.9 |
+| RRM                  | AAAI20    | ResNet38   | ResNet101 DeepLabv2       | **I** | -                                       | **?**     | 66.3 | 66.5 |
+| BES                  | ECCV20    | ResNet50   | ResNet101 DeepLabv2       | **I** | -                                       | **?**     | 65.7 | 66.6 |
+| AFA                  | CVPR22    | MiT-B1     | -                         | **I** | -                                       | **?**     | 66.0 | 66.3 |
+| CONTA (+SEAM)        | NeurIPS20 | ResNet38   | ResNet101 DeepLabv2       | **I** | -                                       | **?**     | 66.1 | 66.7 |
+| Ru *et al.*          | IJCAI21   | ResNet101  | ResNet101 DeepLabv2       | **I** | -                                       | **?**     | 67.2 | 67.3 |
+| WSGCN (IRN)          | ICME21    | ResNet50   | ResNet101 DeepLabv2       | **I** | -                                       | **I**     | 66.7 | 68.8 |
+| CPN                  | ICCV21    | ResNet38   | ResNet38 DeepLabv1        | **I** | -                                       | **?**     | 67.8 | 68.5 |
+| RPNet                | TMM21     | ResNet101  | ResNet50 DeepLabv2        | **I** | -                                       | ***I***   | 68.0 | 68.2 |
+| AdvCAM               | CVPR21    | ResNet50   | ResNet101 DeepLabv2       | **I** | -                                       | ***I***   | 68.1 | 68.0 |
+| PMM                  | ICCV21    | ResNet38   | ResNet38 PSPnet           | **I** | -                                       | **?**     | 68.5 | 69.0 |
+| WSGCN (IRN)          | ICME21    | ResNet50   | ResNet101 DeepLabv2       | **I** | -                                       | **I+C**   | 68.7 | 69.3 |
+| PMM                  | ICCV21    | Res2Net101 | Res2Net101 PSPnet         | **I** | -                                       | **?**     | 70.0 | 70.5 |
+| MCTformer            | CVPR22    | DeiT-S     | ResNet38 DeeplabV1        | **I** | -                                       | **?**     | 71.9 | 71.6 |
+|                      |           |            |                           |       |                                         |           |      |      |
+|                      |           |            |                           |       |                                         |           |      |      |
+| BBAM                 | CVPR21    | ?          | ResNet101 DeepLabv2       | **B** | MCG                                     | ***I***   | 73.7 | 73.7 |
+| WSSL                 | ICCV15    | -          | VGG16 DeepLabv1           | **B** | -                                       | ***I***   | 60.6 | 62.2 |
+| Song *et al.*        | CVPR19    | -          | ResNet101  DeepLabv1      | **B** | -                                       | ***I***   | 70.2 | -    |
+| SPML (Song *et al.*) | ICLR21    | -          | ResNet101  DeepLabv2      | **B** | -                                       | ***I***   | 73.5 | 74.7 |
+| Oh *et al.*          | CVPR21    | ResNet101  | ResNet101 DeepLabv2       | **B** | -                                       | ***I+C*** | 74.6 | 76.1 |
+|                      |           |            |                           |       |                                         |           |      |      |
+|                      |           |            |                           |       |                                         |           |      |      |
+| Scribblesup          |           |            |                           | **S** |                                         |           |      |      |
+| NormalCut            | CVPR18    | -          | ResNet101 DeepLabv1       | **S** | Saliency                                | **?**     | 74.5 | -    |
+| KernelCut            | ECCV18    | -          | ResNet101 DeepLabv1       | **S** | -                                       | **?**     | 75.0 | -    |
+| BPG                  | IJCAI19   | -          | ResNet101 DeepLabv2       | **S** | -                                       | **?**     | 76.0 | -    |
+| SPML (KernelCut)     | ICLR21    | -          | ResNet101 DeepLabv2       | **S** | -                                       | ***I***   | 76.1 | -    |
+| A2GNN                | TPAMI21   | -          | ?                         | **S** | -                                       | **?**     | 76.2 | 76.1 |
+| DFR                  | arxiv21   | -          | UperNet+Swin  Transformer | **S** | 22KImageNet                             | -         | 82.8 | 82.9 |
+|                      |           |            |                           |       |                                         |           |      |      |
+|                      |           |            |                           |       |                                         |           |      |      |
+| WhatsPoint           | ECCV16    | -          | VGG16 FCN                 | **P** | Objectness                              | ***I***   | 46.1 | -    |
+| PCAM                 | arxiv20   | ResNet50   | DeepLabv3+                | **P** | -                                       | **?**     | 70.5 | -    |
+|                      |           |            |                           |       |                                         |           |      |      |
 
 ### 1.2. Results on MS-COCO dataset
 
-**TODO**
+| Method           | Pub.   | Bac. C   | Arc. S             | Sup.  | Extra data | val  | test |
+|:----------------:|:------:|:--------:|:------------------:|:-----:|:----------:| ---- | ---- |
+| **w/ saliency**  |        |          |                    |       |            |      |      |
+| AuxSegNet        | ICCV21 | ResNet38 | -                  | **I** | Saliency   | 33.9 | -    |
+|                  |        |          |                    |       |            |      |      |
+| **w/o saliency** |        |          |                    |       |            |      |      |
+| MCTformer        | CVPR22 | DeiT-S   | ResNet38 DeeplabV1 | **I** | -          | 42.0 | -    |
+|                  |        |          |                    |       |            |      |      |
 
 # 2. Paper List
 
 ## 2.1. supervised by image tags (I)
+
+**2022**
+
+- **MCTformer:** "Multi-class Token Transformer for Weakly Supervised Semantic Segmentation" *CVPR2022*
+- **AFA:** "Learning Affinity from Attention End-to-End Weakly-Supervised Semantic Segmentation with Transformers" *CVPR2022*
+- **WegFormer:** WegFormer Transformers for Weakly Supervised Semantic Segmentation *CVPR2022*
 
 **2021**
 
@@ -104,8 +123,8 @@
 - **Ru *et al.*:** "Learning Visual Words for Weakly-Supervised Semantic Segmentation" *IJCAI2021*
 - **AuxSegNet:** "Leveraging Auxiliary Tasks with Affinity Learning for Weakly Supervised Semantic Segmentation" *ICCV2021*
 - **CPN:** "Complementary Patch for Weakly Supervised Semantic Segmentation" *ICCV2021*
-- **RPNet:** "Cross-Image Region Mining with Region Prototypical Network for Weakly Supervised Segmentation" *arxiv2021*
-- **Method:** "" *2021*
+- **PMM:** "Pseudo-mask Matters in Weakly-supervised Semantic Segmentation" *ICCV2021*
+- **RPNet:** "Cross-Image Region Mining with Region Prototypical Network for Weakly Supervised Segmentation" *TMM2021*
 
 **2020**
 
@@ -120,6 +139,7 @@
 - **CONTA:** "Causal intervention for weakly-supervised semantic segmentation" *NeurIPS2020*
 - **Method:** "Find it if You Can: End-to-End Adversarial Erasing for Weakly-Supervised Semantic Segmentation" *2020arXiv*
 - **Zhang *et al.*:** "Splitting vs. Merging: Mining Object Regions with Discrepancy and Intersection Loss for Weakly Supervised Semantic Segmentation" *ECCV2020*
+- **LIID** "Leveraging Instance-, Image- and Dataset-Level Information for Weakly Supervised Instance Segmentation" *TPAMI2020*
 
 **2019**
 
@@ -168,7 +188,6 @@
 - **SPML:** "Universal Weakly Supervised Segmentation by Pixel-to-Segment Contrastive Learning" *ICLR2021*
 - **DFR:** "Dynamic Feature Regularized Loss for Weakly Supervised Semantic Segmentation" *arxiv2021*
 - **A2GNN:** "Affinity attention graph neural network for weakly supervised semantic segmentation" *TPAMI2021*
-- **Method:** "" *2021*
 
 ### 2.4. Supervised by point (P)
 
