@@ -1,6 +1,6 @@
 # Awesome Weakly-supervised Semantic Segmentation
 
-- [1. Performance](#1-performance)
+- [1. Performance](#1-performance-list)
     + [1.1. Results on PASCAL VOC 2012 dataset](#11-results-on-pascal-voc-2012-dataset)
     + [1.2. Results on MS-COCO dataset](#12-results-on-ms-coco-dataset)
 - [2. Paper List](#2-paper-list)
@@ -20,7 +20,7 @@
 
 
 
-# 1. Performance
+# 1. Performance list
 
 ### 1.1. Results on PASCAL VOC 2012 dataset
 
