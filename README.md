@@ -1,24 +1,26 @@
 # Awesome Weakly-supervised Semantic Segmentation
 
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)![GitHub stars](https://img.shields.io/github/stars/gyguo/awesome-weakly-supervised-semantic-segmentation?color=yellow)  ![GitHub forks](https://img.shields.io/github/forks/gyguo/awesome-weakly-supervised-semantic-segmentation?color=green&label=Fork)  ![visitors](https://visitor-badge.glitch.me/badge?page_id=gyguo.awesome-weakly-supervised-semantic-segmentation)
+
+# Table of Contents
+
 - [1. Performance](#1-performance-list)
-    + [1.1. Results on PASCAL VOC 2012 dataset](#11-results-on-pascal-voc-2012-dataset)
-    + [1.2. Results on MS-COCO dataset](#12-results-on-ms-coco-dataset)
+  + [1.1. Results on PASCAL VOC 2012 dataset](#11-results-on-pascal-voc-2012-dataset)
+  + [1.2. Results on MS-COCO dataset](#12-results-on-ms-coco-dataset)
 - [2. Paper List](#2-paper-list)
-    + [2.1. supervised by image tags (I)](#21-supervised-by-image-tags--i-)
-    + [2.2. Supervised by bounding box (B)](#22-supervised-by-bounding-box--b-)
-    + [2.3. Supervised by scribble (S)](#23-supervised-by-scribble--s-)
-    + [2.4. Supervised by point (P)](#24-supervised-by-point--p-)
+  + [2.1. supervised by image tags (I)](#21-supervised-by-image-tags--i-)
+  + [2.2. Supervised by bounding box (B)](#22-supervised-by-bounding-box--b-)
+  + [2.3. Supervised by scribble (S)](#23-supervised-by-scribble--s-)
+  + [2.4. Supervised by point (P)](#24-supervised-by-point--p-)
 - [3. Dataset](#3-dataset)
-    + [PASCAL VOC 2012](#pascal-voc-2012)
-    + [MS COCO](#ms-coco)
-        
-------
-
-**<u>Contact me if any paper is missed!</u>**
+  + [PASCAL VOC 2012](#pascal-voc-2012)
+  + [MS COCO](#ms-coco)
 
 ------
 
+**<u>Contact gyguo95@gmail.com if any paper is missed!</u>**
 
+------
 
 # 1. Performance list
 
@@ -59,7 +61,7 @@
 | EDAM                 | CVPR21    | ResNet38   | ResNet101 DeepLabv2       | **I** | Saliency                                | **?**     | 70.9 | 70.6 |
 | DRS                  | AAAI21    | VGG16      | ResNet101 DeepLabv2       | **I** | Saliency                                | ***I+C*** | 71.2 | 71.4 |
 |                      |           |            |                           |       |                                         |           |      |      |
-| **Image-level**      |           |            |                           |       | **w/0**                                        |           |      |      |
+| **Image-level**      |           |            |                           |       | **w/0**                                 |           |      |      |
 | AffinityNet          | CVPR18    | ResNet38   | ResNet38                  | **I** | -                                       | **?**     | 61.7 | 63.7 |
 | ICD                  | CVPR20    | VGG16      | ResNet101 DeepLabv1       | **I** | -                                       | **?**     | 64.1 | 64.3 |
 | IRN                  | CVPR19    | ResNet50   | ResNet50 DeepLabv2        | **I** | -                                       | ***I***   | 63.5 | 64.8 |
