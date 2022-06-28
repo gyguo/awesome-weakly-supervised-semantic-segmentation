@@ -1,4 +1,4 @@
-# Awesome Weakly-supervised Semantic Segmentation （Image）
+# Awesome Weakly-supervised Semantic Segmentation
 
 ------
 
