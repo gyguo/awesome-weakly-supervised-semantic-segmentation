@@ -5,9 +5,12 @@
 # Table of Contents
 
 - [1. Performance list](#1-performance-list)
+  
   + [1.1. Results on PASCAL VOC 2012 dataset](#11-results-on-pascal-voc-2012-dataset)
   + [1.2. Results on MS-COCO dataset](#12-results-on-ms-coco-dataset)
+
 - [2. Paper List](#2-paper-list)
+  
   + [2.1. supervised by image tags (I)](#21-supervised-by-image-tags--i-)
     - [2022](#2022)
     - [2021](#2021)
@@ -19,6 +22,7 @@
   + [2.2. Supervised by bounding box (B)](#22-supervised-by-bounding-box--b-)
   + [2.3. Supervised by scribble (S)](#23-supervised-by-scribble--s-)
   + [2.4. Supervised by point (P)](#24-supervised-by-point--p-)
+
 - [3. Dataset](#3-dataset)
   
       - [PASCAL VOC 2012](#pascal-voc-2012)
@@ -222,7 +226,8 @@
 
 #### PASCAL VOC 2012
 
-`@article{everingham2010pascal,
+```
+@article{everingham2010pascal,
   title={The pascal visual object classes (voc) challenge},
   author={Everingham, Mark and Van Gool, Luc and Williams, Christopher KI and Winn, John and Zisserman, Andrew},
   journal={International journal of computer vision},
@@ -231,15 +236,18 @@
   pages={303--338},
   year={2010},
   publisher={Springer}
-}`
+}
+```
 
 #### MS COCO
 
-`@inproceedings{lin2014microsoft,
+```
+@inproceedings{lin2014microsoft,
   title={Microsoft coco: Common objects in context},
   author={Lin, Tsung-Yi and Maire, Michael and Belongie, Serge and Hays, James and Perona, Pietro and Ramanan, Deva and Doll{\'a}r, Piotr and Zitnick, C Lawrence},
   booktitle={European conference on computer vision},
   pages={740--755},
   year={2014},
   organization={Springer}
-}`
+}
+```
