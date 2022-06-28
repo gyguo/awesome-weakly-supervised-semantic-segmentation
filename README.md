@@ -3,26 +3,24 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)![GitHub stars](https://img.shields.io/github/stars/gyguo/awesome-weakly-supervised-semantic-segmentation?color=yellow)  ![GitHub forks](https://img.shields.io/github/forks/gyguo/awesome-weakly-supervised-semantic-segmentation?color=green&label=Fork)  ![visitors](https://visitor-badge.glitch.me/badge?page_id=gyguo.awesome-weakly-supervised-semantic-segmentation)
 
 # Table of Contents
-
 - [1. Performance list](#1-performance-list)
     + [1.1. Results on PASCAL VOC 2012 dataset](#11-results-on-pascal-voc-2012-dataset)
     + [1.2. Results on MS-COCO dataset](#12-results-on-ms-coco-dataset)
 - [2. Paper List](#2-paper-list)
     + [2.1. supervised by image tags (I)](#21-supervised-by-image-tags--i-)
-        * [2022](#2022)
-        * [2021](#2021)
-        * [2020](#2020)
-        * [2019](#2019)
-        * [2018](#2018)
-        * [2017](#2017)
-        * [2016](#2016)
+      - [2022](#2022)
+      - [2021](#2021)
+      - [2020](#2020)
+      - [2019](#2019)
+      - [2018](#2018)
+      - [2017](#2017)
+      - [2016](#2016)
     + [2.2. Supervised by bounding box (B)](#22-supervised-by-bounding-box--b-)
     + [2.3. Supervised by scribble (S)](#23-supervised-by-scribble--s-)
     + [2.4. Supervised by point (P)](#24-supervised-by-point--p-)
 - [3. Dataset](#3-dataset)
-        * [PASCAL VOC 2012](#pascal-voc-2012)
-        * [MS COCO](#ms-coco)
-
+      - [PASCAL VOC 2012](#pascal-voc-2012)
+      - [MS COCO](#ms-coco)
 ------
 
 **<u>Contact gyguo95@gmail.com if any paper is missed!</u>**
@@ -126,13 +124,13 @@
 
 ### 2.1. supervised by image tags (I)
 
-##### 2022
+#### 2022
 
 - **MCTformer:** "Multi-class Token Transformer for Weakly Supervised Semantic Segmentation" *CVPR2022*
 - **AFA:** "Learning Affinity from Attention End-to-End Weakly-Supervised Semantic Segmentation with Transformers" *CVPR2022*
 - **WegFormer:** WegFormer Transformers for Weakly Supervised Semantic Segmentation *CVPR2022*
 
-##### 2021
+#### 2021
 
 - **SPML:** "Universal Weakly Supervised Segmentation by Pixel-to-Segment Contrastive Learning" *ICLR2021*
 - **Li *et al.*:** "Group-Wise Semantic Mining for Weakly Supervised Semantic Segmentation" *AAAI2021*
@@ -149,7 +147,7 @@
 - **PMM:** "Pseudo-mask Matters in Weakly-supervised Semantic Segmentation" *ICCV2021*
 - **RPNet:** "Cross-Image Region Mining with Region Prototypical Network for Weakly Supervised Segmentation" *TMM2021*
 
-##### 2020
+#### 2020
 
 - **RRM:** "Reliability Does Matter An End-to-End Weakly Supervised Semantic Segmentation Approach" *AAAI2020*
 - **IAL:** "Weakly-Supervised Semantic Segmentation by Iterative Affinity Learning" *IJCV2020*
@@ -164,7 +162,7 @@
 - **Zhang *et al.*:** "Splitting vs. Merging: Mining Object Regions with Discrepancy and Intersection Loss for Weakly Supervised Semantic Segmentation" *ECCV2020*
 - **LIID** "Leveraging Instance-, Image- and Dataset-Level Information for Weakly Supervised Instance Segmentation" *TPAMI2020*
 
-##### 2019
+#### 2019
 
 - **IRN:** "Weakly Supervised Learning of Instance Segmentation with Inter-pixel Relations" *CVPR2019*
 - **Ficklenet:** " Ficklenet: Weakly and semi-supervised semantic image segmentation using stochastic inference" *CVPR2019*
@@ -172,7 +170,7 @@
 - **OAA:** "Integral Object Mining via Online Attention Accumulation" *ICCV2019*
 - **SSDD:** "Self-supervised difference detection for weakly-supervised semantic segmentation" *ICCV2019*
 
-##### 2018
+#### 2018
 
 - **DSRG:** "Weakly-supervised semantic segmentation network with deep seeded region growing" *CVPR2018*
 - **AffinityNet:** "Learning Pixel-level Semantic Affinity with Image-level Supervision for Weakly Supervised Semantic Segmentation" *CVPR2018*
@@ -181,14 +179,14 @@
 - **SeeNet:** "Self-Erasing Network for Integral Object Attention" *NeurIPS2018*
 - **Method:** "" *2018*
 
-##### 2017
+#### 2017
 
 - **CrawlSeg:** "Weakly Supervised Semantic Segmentation using Web-Crawled Videos" *CVPR2017*
 - **WebS-i2:** "Webly supervised semantic segmentation" *CVPR2017*
 - **Oh *et al*.:** "Exploiting saliency for object segmentation from image level labels" *CVPR2017*
 - **TPL:** "Two-phase learning for weakly supervised object localization" *ICCV2017*
 
-##### 2016
+#### 2016
 
 - **SEC:** "Seed, expand and constrain: Three principles for weakly-supervised image segmentation" *ECCV2016*
 - **AF-SS:** "Augmented Feedback in Semantic Segmentation under Image Level Supervision" *2016*
@@ -219,6 +217,25 @@
 
 # 3. Dataset
 
-##### PASCAL VOC 2012
+#### PASCAL VOC 2012
 
-##### MS COCO
+@article{everingham2010pascal,
+  title={The pascal visual object classes (voc) challenge},
+  author={Everingham, Mark and Van Gool, Luc and Williams, Christopher KI and Winn, John and Zisserman, Andrew},
+  journal={International journal of computer vision},
+  volume={88},
+  number={2},
+  pages={303--338},
+  year={2010},
+  publisher={Springer}
+}
+
+#### MS COCO
+@inproceedings{lin2014microsoft,
+  title={Microsoft coco: Common objects in context},
+  author={Lin, Tsung-Yi and Maire, Michael and Belongie, Serge and Hays, James and Perona, Pietro and Ramanan, Deva and Doll{\'a}r, Piotr and Zitnick, C Lawrence},
+  booktitle={European conference on computer vision},
+  pages={740--755},
+  year={2014},
+  organization={Springer}
+}
