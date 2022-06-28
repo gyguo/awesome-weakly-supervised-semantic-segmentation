@@ -117,15 +117,15 @@
 
 # 2. Paper List
 
-## 2.1. supervised by image tags (I)
+### 2.1. supervised by image tags (I)
 
-**2022**
+##### 2022
 
 - **MCTformer:** "Multi-class Token Transformer for Weakly Supervised Semantic Segmentation" *CVPR2022*
 - **AFA:** "Learning Affinity from Attention End-to-End Weakly-Supervised Semantic Segmentation with Transformers" *CVPR2022*
 - **WegFormer:** WegFormer Transformers for Weakly Supervised Semantic Segmentation *CVPR2022*
 
-**2021**
+##### 2021
 
 - **SPML:** "Universal Weakly Supervised Segmentation by Pixel-to-Segment Contrastive Learning" *ICLR2021*
 - **Li *et al.*:** "Group-Wise Semantic Mining for Weakly Supervised Semantic Segmentation" *AAAI2021*
@@ -142,7 +142,7 @@
 - **PMM:** "Pseudo-mask Matters in Weakly-supervised Semantic Segmentation" *ICCV2021*
 - **RPNet:** "Cross-Image Region Mining with Region Prototypical Network for Weakly Supervised Segmentation" *TMM2021*
 
-**2020**
+##### 2020
 
 - **RRM:** "Reliability Does Matter An End-to-End Weakly Supervised Semantic Segmentation Approach" *AAAI2020*
 - **IAL:** "Weakly-Supervised Semantic Segmentation by Iterative Affinity Learning" *IJCV2020*
@@ -157,7 +157,7 @@
 - **Zhang *et al.*:** "Splitting vs. Merging: Mining Object Regions with Discrepancy and Intersection Loss for Weakly Supervised Semantic Segmentation" *ECCV2020*
 - **LIID** "Leveraging Instance-, Image- and Dataset-Level Information for Weakly Supervised Instance Segmentation" *TPAMI2020*
 
-**2019**
+##### 2019
 
 - **IRN:** "Weakly Supervised Learning of Instance Segmentation with Inter-pixel Relations" *CVPR2019*
 - **Ficklenet:** " Ficklenet: Weakly and semi-supervised semantic image segmentation using stochastic inference" *CVPR2019*
@@ -165,7 +165,7 @@
 - **OAA:** "Integral Object Mining via Online Attention Accumulation" *ICCV2019*
 - **SSDD:** "Self-supervised difference detection for weakly-supervised semantic segmentation" *ICCV2019*
 
-**2018**
+##### 2018
 
 - **DSRG:** "Weakly-supervised semantic segmentation network with deep seeded region growing" *CVPR2018*
 - **AffinityNet:** "Learning Pixel-level Semantic Affinity with Image-level Supervision for Weakly Supervised Semantic Segmentation" *CVPR2018*
@@ -174,14 +174,14 @@
 - **SeeNet:** "Self-Erasing Network for Integral Object Attention" *NeurIPS2018*
 - **Method:** "" *2018*
 
-**2017**
+##### 2017
 
 - **CrawlSeg:** "Weakly Supervised Semantic Segmentation using Web-Crawled Videos" *CVPR2017*
 - **WebS-i2:** "Webly supervised semantic segmentation" *CVPR2017*
 - **Oh *et al*.:** "Exploiting saliency for object segmentation from image level labels" *CVPR2017*
 - **TPL:** "Two-phase learning for weakly supervised object localization" *ICCV2017*
 
-**2016**
+##### 2016
 
 - **SEC:** "Seed, expand and constrain: Three principles for weakly-supervised image segmentation" *ECCV2016*
 - **AF-SS:** "Augmented Feedback in Semantic Segmentation under Image Level Supervision" *2016*
