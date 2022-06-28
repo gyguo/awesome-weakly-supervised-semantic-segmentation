@@ -9,8 +9,8 @@
     + [2.3. Supervised by scribble (S)](#23-supervised-by-scribble--s-)
     + [2.4. Supervised by point (P)](#24-supervised-by-point--p-)
 - [3. Dataset](#3-dataset)
-        * [PASCAL VOC 2012](#pascal-voc-2012)
-        * [MS COCO](#ms-coco)
+    + [PASCAL VOC 2012](#pascal-voc-2012)
+    + [MS COCO](#ms-coco)
         
 ------
 
