@@ -59,7 +59,7 @@
 | EDAM                 | CVPR21    | ResNet38   | ResNet101 DeepLabv2       | **I** | Saliency                                | **?**     | 70.9 | 70.6 |
 | DRS                  | AAAI21    | VGG16      | ResNet101 DeepLabv2       | **I** | Saliency                                | ***I+C*** | 71.2 | 71.4 |
 |                      |           |            |                           |       |                                         |           |      |      |
-| **Image-level**      |           |            |                           |       |                                         |           |      |      |
+| **Image-level**      |           |            |                           |       | **w/0**                                        |           |      |      |
 | AffinityNet          | CVPR18    | ResNet38   | ResNet38                  | **I** | -                                       | **?**     | 61.7 | 63.7 |
 | ICD                  | CVPR20    | VGG16      | ResNet101 DeepLabv1       | **I** | -                                       | **?**     | 64.1 | 64.3 |
 | IRN                  | CVPR19    | ResNet50   | ResNet50 DeepLabv2        | **I** | -                                       | ***I***   | 63.5 | 64.8 |
