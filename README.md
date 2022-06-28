@@ -4,7 +4,7 @@
     + [1.1. Results on PASCAL VOC 2012 dataset](#11-results-on-pascal-voc-2012-dataset)
     + [1.2. Results on MS-COCO dataset](#12-results-on-ms-coco-dataset)
 - [2. Paper List](#2-paper-list)
-  * [2.1. supervised by image tags (I)](#21-supervised-by-image-tags--i-)
+    + [2.1. supervised by image tags (I)](#21-supervised-by-image-tags--i-)
     + [2.2. Supervised by bounding box (B)](#22-supervised-by-bounding-box--b-)
     + [2.3. Supervised by scribble (S)](#23-supervised-by-scribble--s-)
     + [2.4. Supervised by point (P)](#24-supervised-by-point--p-)
