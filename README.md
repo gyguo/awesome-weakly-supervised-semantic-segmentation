@@ -26,7 +26,7 @@
 - [3. Dataset](#3-dataset)
   
       - [PASCAL VOC 2012](#pascal-voc-2012)
-      - [MS COCO](#ms-coco)
+      - [MS COCO 2014](#ms-coco-2014)
 
 ------
 
@@ -239,7 +239,7 @@
 }
 ```
 
-#### MS COCO
+#### MS COCO 2014
 
 ```
 @inproceedings{lin2014microsoft,
