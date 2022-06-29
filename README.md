@@ -5,23 +5,23 @@
 # Table of Contents
 
 - [1. Performance list](#1-performance-list)
-    + [1.1. Results on PASCAL VOC 2012 dataset](#11-results-on-pascal-voc-2012-dataset)
-    + [1.2. Results on MS-COCO dataset](#12-results-on-ms-coco-dataset)
+  + [1.1. Results on PASCAL VOC 2012 dataset](#11-results-on-pascal-voc-2012-dataset)
+  + [1.2. Results on MS-COCO dataset](#12-results-on-ms-coco-dataset)
 - [2. Paper List](#2-paper-list)
-    + [2.1. supervised by image tags (I)](#21-supervised-by-image-tags--i-)
-      - [2022](#2022)
-      - [2021](#2021)
-      - [2020](#2020)
-      - [2019](#2019)
-      - [2018](#2018)
-      - [2017](#2017)
-      - [2016](#2016)
-    + [2.2. Supervised by bounding box (B)](#22-supervised-by-bounding-box--b-)
-    + [2.3. Supervised by scribble (S)](#23-supervised-by-scribble--s-)
-    + [2.4. Supervised by point (P)](#24-supervised-by-point--p-)
+  + [2.1. supervised by image tags (I)](#21-supervised-by-image-tags--i-)
+    - [2022](#2022)
+    - [2021](#2021)
+    - [2020](#2020)
+    - [2019](#2019)
+    - [2018](#2018)
+    - [2017](#2017)
+    - [2016](#2016)
+  + [2.2. Supervised by bounding box (B)](#22-supervised-by-bounding-box--b-)
+  + [2.3. Supervised by scribble (S)](#23-supervised-by-scribble--s-)
+  + [2.4. Supervised by point (P)](#24-supervised-by-point--p-)
 - [3. Dataset](#3-dataset)
-    + [PASCAL VOC 2012](#pascal-voc-2012)
-    + [MS COCO 2014](#ms-coco-2014)
+  + [PASCAL VOC 2012](#pascal-voc-2012)
+  + [MS COCO 2014](#ms-coco-2014)
 
 ------
 
@@ -66,7 +66,11 @@
 | WegFormer            | CVPR22    | Deit-B     | ResNet101 DeepLabv **?**  | **I** | Saliency                                | ***I***   | 70.5 | 70.3 |
 | WegFormer            | CVPR22    | Deit-B     | ResNet101 DeepLabv **?**  | **I** | Saliency                                | ***I+C*** | 70.9 | 70.5 |
 | EDAM                 | CVPR21    | ResNet38   | ResNet101 DeepLabv2       | **I** | Saliency                                | **?**     | 70.9 | 70.6 |
+| EPS                  | CVPR21    | ResNet38   | ResNet101 DeepLabv2       | **I** | Saliency                                | ***I***   | 70.9 | 70.8 |
+| EPS                  | CVPR21    | ResNet38   | ResNet101 DeepLabv1       | **I** | Saliency                                | ***I***   | 71.0 | 71.8 |
 | DRS                  | AAAI21    | VGG16      | ResNet101 DeepLabv2       | **I** | Saliency                                | ***I+C*** | 71.2 | 71.4 |
+| L2G                  | CVPR22    | L2G        | ResNet101 DeepLabv1       | **I** | Saliency                                | **?**     | 72.0 | 73.0 |
+| L2G                  | CVPR22    | L2G        | ResNet101 DeepLabv2       | **I** | Saliency                                | **?**     | 72.1 | 71.7 |
 |                      |           |            |                           |       |                                         |           |      |      |
 | **Image-level**      |           |            |                           |       | **w/0**                                 |           |      |      |
 | AffinityNet          | CVPR18    | ResNet38   | ResNet38                  | **I** | -                                       | **?**     | 61.7 | 63.7 |
@@ -113,14 +117,18 @@
 
 ### 1.2. Results on MS-COCO dataset
 
-| Method          | Pub.   | Bac. C   | Arc. S             | Sup.  | Extra data | val  | test |
-|:---------------:|:------:|:--------:|:------------------:|:-----:|:----------:| ---- | ---- |
-| **Image-level** |        |          |                    |       | **w/**     |      |      |
-| AuxSegNet       | ICCV21 | ResNet38 | -                  | **I** | Saliency   | 33.9 | -    |
-|                 |        |          |                    |       |            |      |      |
-| **Image-level** |        |          |                    |       | **w/o**    |      |      |
-| MCTformer       | CVPR22 | DeiT-S   | ResNet38 DeeplabV1 | **I** | -          | 42.0 | -    |
-|                 |        |          |                    |       |            |      |      |
+| Method          | Pub.   | Bac. C   | Arc. S              | Sup.  | Extra data | val  | test |
+|:---------------:|:------:|:--------:|:-------------------:|:-----:|:----------:| ---- | ---- |
+| **Image-level** |        |          |                     |       | **w/**     |      |      |
+|                 |        |          |                     |       |            |      |      |
+| AuxSegNet       | ICCV21 | ResNet38 | -                   | **I** | Saliency   | 33.9 | -    |
+| EPS             | CVPR21 | ResNet38 | ResNet101 DeepLabv2 | **I** | Saliency   | 35.7 | -    |
+| L2G             | CVPR22 | L2G      | VGG16 DeepLabv2     | **I** | Saliency   | 42.7 | -    |
+| L2G             | CVPR22 | L2G      | ResNet101 DeepLabv2 | **I** | Saliency   | 44.2 | -    |
+|                 |        |          |                     |       |            |      |      |
+|                 |        |          |                     |       |            |      |      |
+| **Image-level** |        |          |                     |       | **w/o**    |      |      |
+| MCTformer       | CVPR22 | DeiT-S   | ResNet38 DeeplabV1  | **I** | -          | 42.0 | -    |
 
 # 2. Paper List
 
@@ -128,9 +136,10 @@
 
 #### 2022
 
-- **MCTformer:** "Multi-class Token Transformer for Weakly Supervised Semantic Segmentation" *CVPR2022*
-- **AFA:** "Learning Affinity from Attention End-to-End Weakly-Supervised Semantic Segmentation with Transformers" *CVPR2022*
+- **MCTformer:** Multi-class Token Transformer for Weakly Supervised Semantic Segmentation *CVPR2022*
+- **AFA:** Learning Affinity from Attention End-to-End Weakly-Supervised Semantic Segmentation with Transformers *CVPR2022*
 - **WegFormer:** WegFormer Transformers for Weakly Supervised Semantic Segmentation *CVPR2022*
+- **L2G:** L2G: A Simple Local-to-Global Knowledge Transfer Framework for Weakly Supervised Semantic Segmentation *CVPR2022*
 
 #### 2021
 
@@ -140,6 +149,7 @@
 - **AdvCAM:** " Anti-Adversarially Manipulated Attributions for Weakly and Semi-Supervised Semantic Segmentation" *CVPR2021*
 - **Yao et al.  **: "Non-Salient Region Object Mining for Weakly Supervised Semantic Segmentation" *CVPR2021*
 - **EDAM:** "Embedded Discriminative Attention Mechanism for Weakly Supervised Semantic Segmentation" *CVPR2021*
+- **EPS:** Railroad is not a Train Saliency as Pseudo-pixel Supervision for Weakly Supervised Semantic Segmentation *CVPR2021*
 - **WSGCN:** "Weakly-Supervised Image Semantic Segmentation Using Graph Convolutional Networks" *ICME2021*
 - **PuzzleCAM:** "Puzzle-CAM Improved localization via matching partial and full features" *2021arXiv*
 - **CDA:** "Context Decoupling Augmentation for Weakly Supervised Semantic Segmentation" *2021arXiv*
