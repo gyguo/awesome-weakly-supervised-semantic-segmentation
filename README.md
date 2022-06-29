@@ -51,8 +51,8 @@
 | SEC                  | ECCV16    | VGG16      | VGG16 DeepLabv1           | **I** | Saliency                                | ***I***   | 50.7 | 51.7 |
 | DSRG (SEC)           | CVPR18    | VGG16      | ResNet101 DeepLabv2       | **I** | Saliency                                | ***I***   | 61.4 | 63.2 |
 | AISI                 | ECCV18    | ResNet101  | ResNet101 DeepLabv2       | **I** | Saliency                                | **?**     | 63.6 | 64.5 |
-| Ficklenet (DSRG)     | CVPR19    | VGG16      | ResNet101 DeepLabv2       | **I** | Instance-level Saliency                 | ***I***   | 64.9 | 65.3 |
-| AISI                 | ECCV18    | ResNet101  | ResNet101 DeepLabv2       | **I** | Instance-level Saliency<br/>24KImageNet | **?**     | 64.5 | 65.6 |
+| Ficklenet (DSRG)     | CVPR19    | VGG16      | ResNet101 DeepLabv2       | **I** | Saliency                                | ***I***   | 64.9 | 65.3 |
+| AISI                 | ECCV18    | ResNet101  | ResNet101 DeepLabv2       | **I** | Saliency<br/>24KImageNet                | **?**     | 64.5 | 65.6 |
 | OAA                  | ICCV19    | VGG16      | ResNet101 DeepLabv1       | **I** | Saliency                                | ***I***   | 65.2 | 66.4 |
 | Zhang *et al.*       | ECCV20    | ResNet50   | ResNet50 DeepLabv2        | **I** | Saliency                                | **?**     | 66.6 | 66.7 |
 | Fan *et al.*         | ECCV20    | ResNet38   | ResNet101 DeepLabv1       | **I** | Saliency                                | **?**     | 67.2 | 66.7 |
