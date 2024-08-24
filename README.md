@@ -30,6 +30,7 @@
 - [3. Dataset](#3-dataset)
     + [PASCAL VOC 2012](#pascal-voc-2012)
     + [MS COCO 2014](#ms-coco-2014)
+- [4. Awesome-list of Weakly-supervised Learning from Our Team](#4-awesome-list-of-weakly-supervised-learning-from-our-team)
 
 ------
 
@@ -275,4 +276,10 @@
   year={2014},
   organization={Springer}
 }
+
+# 4. Awesome-list of Weakly-supervised Learning from Our Team
+- [Awesome Weakly-supervised Semantic Segmentation](https://github.com/gyguo/awesome-weakly-supervised-semantic-segmentation)
+- [Awesome Weakly-supervised Action Localization](https://github.com/VividLe/awesome-weakly-supervised-action-localization)
+- [Awesome Weakly-supervised Object Localization](https://github.com/gyguo/awesome-weakly-supervised-object-localization)
+
 ```
