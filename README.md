@@ -1,11 +1,13 @@
 # Awesome Weakly-supervised Semantic Segmentation
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)![GitHub stars](https://img.shields.io/github/stars/gyguo/awesome-weakly-supervised-semantic-segmentation?color=yellow)  ![GitHub forks](https://img.shields.io/github/forks/gyguo/awesome-weakly-supervised-semantic-segmentation?color=green&label=Fork)  ![visitors](https://visitor-badge.glitch.me/badge?page_id=gyguo.awesome-weakly-supervised-semantic-segmentation)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)![GitHub stars](https://img.shields.io/github/stars/gyguo/awesome-weakly-supervised-semantic-segmentation?color=yellow)  ![GitHub forks](https://img.shields.io/github/forks/gyguo/awesome-weakly-supervised-semantic-segmentation?color=green&label=Fork)
 
 # Table of Contents
 
 - [1. Paper List](#1-paper-list)
     + [1.1. supervised by image tags (I)](#11-supervised-by-image-tags)
+      - [2024](#2024)
+      - [2023](#2023)
       - [2022](#2022)
       - [2021](#2021)
       - [2020](#2020)
@@ -35,21 +37,36 @@
 
 ------
 
-
-
 # 1. Paper List
 
 ### 1.1. supervised by image tags
 
-#### 2022
+#### 2024
+- Curriculum Point Prompting for Weakly-Supervised Referring Image Segmentation *CVPR2024*
+- DuPL: Dual Student with Trustworthy Progressive Learning for Robust Weakly Supervised Semantic Segmentation *CVPR2024*
+- Hunting Attributes: Context Prototype-Aware Learning for Weakly Supervised Semantic Segmentation *CVPR2024*
+- PSDPM: Prototype-based Secondary Discriminative Pixels Mining for Weakly Supervised Semantic Segmentation *CVPR2024*
+- Frozen CLIP: A Strong Backbone for Weakly Supervised Semantic Segmentation *CVPR2024*
+- Class Tokens Infusion for Weakly Supervised Semantic Segmentation *CVPR2024*
+- From SAM to CAMs: Exploring Segment Anything Model for Weakly Supervised Semantic Segmentation *CVPR2024*
+- Separate and Conquer: Decoupling Co-occurrence via Decomposition and Representation for Weakly Supervised Semantic Segmentation *CVPR2024*
+- **ASDT:** Weakly Supervised Semantic Segmentation via Alternative Self-Dual Teaching *TIP24*
 
+#### 2023
+- CLIP Is Also an Efficient Segmenter: A Text-Driven Approach for Weakly Supervised Semantic Segmentation *CVPR2023*
+- Token Contrast for Weakly-Supervised Semantic Segmentation *CVPR2023*
+- Out-of-Candidate Rectification for Weakly Supervised Semantic Segmentation *CVPR2023*
+- Uncertainty Estimation via Response Scaling for Pseudo-Mask Noise Mitigation in Weakly-Supervised Semantic Segmentation *AAAI2023*
+- Salvage of Supervision in Weakly Supervised Object Detection and Segmentation *TPAMI24*
+
+#### 2022
+- Regional Semantic Contrast and Aggregation for Weakly Supervised Semantic Segmentation  *CVPR2022*
 - **MCTformer:** Multi-class Token Transformer for Weakly Supervised Semantic Segmentation *CVPR2022*
 - **AFA:** Learning Affinity from Attention End-to-End Weakly-Supervised Semantic Segmentation with Transformers *CVPR2022*
 - **WegFormer:** WegFormer Transformers for Weakly Supervised Semantic Segmentation *CVPR2022*
 - **L2G:** L2G: A Simple Local-to-Global Knowledge Transfer Framework for Weakly Supervised Semantic Segmentation *CVPR2022*
 - **ReCAM:** Class Re-Activation Maps for Weakly-Supervised Semantic Segmentation. *CVPR2022*
 - **GETAM:** GETAM: Gradient-weighted Element-wise Transformer Attention Map for Weakly-supervised Semantic segmentation *arxiv2022*
-- **ASDT:** Weakly Supervised Semantic Segmentation via Alternative Self-Dual Teaching *arxiv2022*
 
 #### 2021
 
