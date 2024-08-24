@@ -50,6 +50,8 @@
 - Class Tokens Infusion for Weakly Supervised Semantic Segmentation *CVPR2024*
 - From SAM to CAMs: Exploring Segment Anything Model for Weakly Supervised Semantic Segmentation *CVPR2024*
 - Separate and Conquer: Decoupling Co-occurrence via Decomposition and Representation for Weakly Supervised Semantic Segmentation *CVPR2024*
+- SFC: Shared Feature Calibration in Weakly Supervised Semantic Segmentation *AAAI2024*
+- Progressive Feature Self-Reinforcement for Weakly Supervised Semantic Segmentation *AAAI2024*
 - **ASDT:** Weakly Supervised Semantic Segmentation via Alternative Self-Dual Teaching *TIP24*
 
 #### 2023
@@ -151,6 +153,8 @@
 - **SPML:** "Universal Weakly Supervised Segmentation by Pixel-to-Segment Contrastive Learning" *ICLR2021*
 - **DFR:** "Dynamic Feature Regularized Loss for Weakly Supervised Semantic Segmentation" *arxiv2021*
 - **A2GNN:** "Affinity attention graph neural network for weakly supervised semantic segmentation" *TPAMI2021*
+- Scribble Hides Class: Promoting Scribble-Based Weakly-Supervised Semantic Segmentation with Its Class Label *AAAI2024*
+
 
 ### 1.4. Supervised by point
 - **WhatsPoint:** "What’s the Point: Semantic Segmentation with Point Supervision" *ECCV2016*
