@@ -53,6 +53,7 @@
 - SFC: Shared Feature Calibration in Weakly Supervised Semantic Segmentation *AAAI2024*
 - Progressive Feature Self-Reinforcement for Weakly Supervised Semantic Segmentation *AAAI2024*
 - **ASDT:** Weakly Supervised Semantic Segmentation via Alternative Self-Dual Teaching *TIP24*
+- Mctformer+: Multi-class token transformer for weakly supervised semantic segmentation *TPAMI24*
 
 #### 2023
 - CLIP Is Also an Efficient Segmenter: A Text-Driven Approach for Weakly Supervised Semantic Segmentation *CVPR2023*
