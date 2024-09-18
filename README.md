@@ -6,15 +6,6 @@
 
 - [1. Paper List](#1-paper-list)
     + [1.1. supervised by image tags (I)](#11-supervised-by-image-tags)
-      - [2024](#2024)
-      - [2023](#2023)
-      - [2022](#2022)
-      - [2021](#2021)
-      - [2020](#2020)
-      - [2019](#2019)
-      - [2018](#2018)
-      - [2017](#2017)
-      - [2016](#2016)
     + [1.2. Supervised by bounding box (B)](#12-supervised-by-bounding-box)
     + [1.3. Supervised by scribble (S)](#13-supervised-by-scribble)
     + [1.4. Supervised by point (P)](#14-supervised-by-point)
@@ -43,6 +34,7 @@
 ### 1.1. supervised by image tags
 
 #### 2024
+- WeakCLIP: Adapting CLIP for Weakly-Supervised Semantic Segmentation *IJCV2024*
 - Curriculum Point Prompting for Weakly-Supervised Referring Image Segmentation *CVPR2024*
 - DuPL: Dual Student with Trustworthy Progressive Learning for Robust Weakly Supervised Semantic Segmentation *CVPR2024*
 - Hunting Attributes: Context Prototype-Aware Learning for Weakly Supervised Semantic Segmentation *CVPR2024*
