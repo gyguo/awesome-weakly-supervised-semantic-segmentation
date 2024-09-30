@@ -34,6 +34,10 @@
 ### 1.1. supervised by image tags
 
 #### 2024
+- DHR: Dual Features-Driven Hierarchical Rebalancing in Inter- and Intra-Class Regions for Weakly-Supervised Semantic Segmentation *ECCV2024*
+- Diffusion-Guided Weakly Supervised Semantic Segmentation *ECCV2024*
+- Knowledge Transfer with Simulated Inter-Image Erasing for Weakly Supervised Semantic Segmentation *ECCV2024*
+- Phase Concentration and Shortcut Suppression for Weakly Supervised Semantic Segmentation *ECCV2024*
 - WeakCLIP: Adapting CLIP for Weakly-Supervised Semantic Segmentation *IJCV2024*
 - Curriculum Point Prompting for Weakly-Supervised Referring Image Segmentation *CVPR2024*
 - DuPL: Dual Student with Trustworthy Progressive Learning for Robust Weakly Supervised Semantic Segmentation *CVPR2024*
