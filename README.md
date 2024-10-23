@@ -34,6 +34,7 @@
 ### 1.1. supervised by image tags
 
 #### 2024
+- DIAL: Dense Image-text ALignment for Weakly Supervised Semantic Segmentation  *ECCV2024*
 - DHR: Dual Features-Driven Hierarchical Rebalancing in Inter- and Intra-Class Regions for Weakly-Supervised Semantic Segmentation *ECCV2024*
 - Diffusion-Guided Weakly Supervised Semantic Segmentation *ECCV2024*
 - Knowledge Transfer with Simulated Inter-Image Erasing for Weakly Supervised Semantic Segmentation *ECCV2024*
@@ -49,7 +50,6 @@
 - Separate and Conquer: Decoupling Co-occurrence via Decomposition and Representation for Weakly Supervised Semantic Segmentation *CVPR2024*
 - SFC: Shared Feature Calibration in Weakly Supervised Semantic Segmentation *AAAI2024*
 - Progressive Feature Self-Reinforcement for Weakly Supervised Semantic Segmentation *AAAI2024*
-- **ASDT:** Weakly Supervised Semantic Segmentation via Alternative Self-Dual Teaching *TIP24*
 - Mctformer+: Multi-class token transformer for weakly supervised semantic segmentation *TPAMI24*
 
 #### 2023
@@ -57,7 +57,8 @@
 - Token Contrast for Weakly-Supervised Semantic Segmentation *CVPR2023*
 - Out-of-Candidate Rectification for Weakly Supervised Semantic Segmentation *CVPR2023*
 - Uncertainty Estimation via Response Scaling for Pseudo-Mask Noise Mitigation in Weakly-Supervised Semantic Segmentation *AAAI2023*
-- Salvage of Supervision in Weakly Supervised Object Detection and Segmentation *TPAMI24*
+- Salvage of Supervision in Weakly Supervised Object Detection and Segmentation *TPAMI23*
+- Weakly Supervised Semantic Segmentation via Alternative Self-Dual Teaching *TIP23*
 
 #### 2022
 - Regional Semantic Contrast and Aggregation for Weakly Supervised Semantic Segmentation  *CVPR2022*
