@@ -50,8 +50,8 @@
 - Separate and Conquer: Decoupling Co-occurrence via Decomposition and Representation for Weakly Supervised Semantic Segmentation *CVPR2024*
 - SFC: Shared Feature Calibration in Weakly Supervised Semantic Segmentation *AAAI2024*
 - Progressive Feature Self-Reinforcement for Weakly Supervised Semantic Segmentation *AAAI2024*
-- Mctformer+: Multi-class token transformer for weakly supervised semantic segmentation *TPAMI24*
-- Foundation Model Assisted Weakly Supervised Semantic Segmentation  *WACV24*
+- Mctformer+: Multi-class token transformer for weakly supervised semantic segmentation *TPAMI2024*
+- Foundation Model Assisted Weakly Supervised Semantic Segmentation  *WACV2024*
 
 
 #### 2023
@@ -59,8 +59,8 @@
 - Token Contrast for Weakly-Supervised Semantic Segmentation *CVPR2023*
 - Out-of-Candidate Rectification for Weakly Supervised Semantic Segmentation *CVPR2023*
 - Uncertainty Estimation via Response Scaling for Pseudo-Mask Noise Mitigation in Weakly-Supervised Semantic Segmentation *AAAI2023*
-- Salvage of Supervision in Weakly Supervised Object Detection and Segmentation *TPAMI23*
-- Weakly Supervised Semantic Segmentation via Alternative Self-Dual Teaching *TIP23*
+- Salvage of Supervision in Weakly Supervised Object Detection and Segmentation *TPAMI2023*
+- Weakly Supervised Semantic Segmentation via Alternative Self-Dual Teaching *TIP2023*
 
 #### 2022
 - Regional Semantic Contrast and Aggregation for Weakly Supervised Semantic Segmentation  *CVPR2022*
