@@ -33,6 +33,10 @@
 
 ### 1.1. supervised by image tags
 
+#### 2025
+Complementary branch fusing class and semantic knowledge for robust weakly supervised semantic segmentation *PR2025*
+
+
 #### 2024
 - DIAL: Dense Image-text ALignment for Weakly Supervised Semantic Segmentation  *ECCV2024*
 - DHR: Dual Features-Driven Hierarchical Rebalancing in Inter- and Intra-Class Regions for Weakly-Supervised Semantic Segmentation *ECCV2024*
