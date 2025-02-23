@@ -34,6 +34,7 @@
 ### 1.1. supervised by image tags
 
 #### 2025
+- Frozen CLIP-DINO: a Strong Backbone for Weakly Supervised Semantic Segmentation *TPAMI2025*
 - Complementary branch fusing class and semantic knowledge for robust weakly supervised semantic segmentation *PR2025*
 
 
