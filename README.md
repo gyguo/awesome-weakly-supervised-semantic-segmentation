@@ -2,6 +2,12 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)![GitHub stars](https://img.shields.io/github/stars/gyguo/awesome-weakly-supervised-semantic-segmentation?color=yellow)  ![GitHub forks](https://img.shields.io/github/forks/gyguo/awesome-weakly-supervised-semantic-segmentation?color=green&label=Fork)
 
+------
+
+**<u>Contact gyguo95@gmail.com if any paper is missed!</u>**
+
+------
+
 # Table of Contents
 
 - [1. Paper List](#1-paper-list)
@@ -11,23 +17,9 @@
     + [1.4. Supervised by point (P)](#14-supervised-by-point)
 - [2. Performance list](#2-performance-list)
     + [2.1. Results on PASCAL VOC dataset](#21-results-on-pascal-voc-dataset)
-      - [Image-level supervision without extra data](#image-level-supervision-without-extra-data)
-      - [Box-level supervision](#box-level-supervision)
-      - [Scribble-level supervision](#scribble-level-supervision)
-      - [Point-level supervision](#point-level-supervision)
     + [2.2. Results on MS-COCO dataset](#22-results-on-ms-coco-dataset)
-      - [Image-level supervision with extra data](#image-level-supervision-with-extra-data)
-      - [Image-level supervision without extra data](#image-level-supervision-without-extra-data-1)
 - [3. Dataset](#3-dataset)
-    + [PASCAL VOC 2012](#pascal-voc-2012)
-    + [MS COCO 2014](#ms-coco-2014)
 - [4. Awesome-list of Weakly-supervised Learning from Our Team](#4-awesome-list-of-weakly-supervised-learning-from-our-team)
-
-------
-
-**<u>Contact gyguo95@gmail.com if any paper is missed!</u>**
-
-------
 
 # 1. Paper List
 
