@@ -27,8 +27,10 @@
 
 #### 2025
 - Frozen CLIP-DINO: a Strong Backbone for Weakly Supervised Semantic Segmentation *TPAMI2025*
+- Exploring CLIP's Dense Knowledge for Weakly Supervised Semantic Segmentation *CVPR2025*
 - Complementary branch fusing class and semantic knowledge for robust weakly supervised semantic segmentation *PR2025*
 - Toward Modality Gap: Vision Prototype Learning for Weakly-supervised Semantic Segmentation with CLIP *AAAI2025*
+
 
 
 #### 2024
