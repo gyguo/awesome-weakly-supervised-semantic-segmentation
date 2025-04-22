@@ -160,6 +160,7 @@
 ### 1.4. Supervised by point
 - **WhatsPoint:** "What’s the Point: Semantic Segmentation with Point Supervision" *ECCV2016*
 - **PCAM:** "PCAMs: Weakly Supervised Semantic Segmentation Using Point Supervision" *arxiv2020*
+- P2Object: Single Point Supervised Object Detection and Instance Segmentation *IJCV2025*
 
 
 # 2. Performance list
