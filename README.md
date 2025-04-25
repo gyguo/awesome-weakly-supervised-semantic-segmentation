@@ -192,7 +192,6 @@
 | ReCAM          | CVPR22    | ResNet50   | ResNet101 DeepLabv2 | **I** | -          | ***I***   | 68.5 | 68.4 |
 | PMM            | ICCV21    | ResNet38   | ResNet38 PSPnet     | **I** | -          | **?**     | 68.5 | 69.0 |
 | WSGCN (IRN)    | ICME21    | ResNet50   | ResNet101 DeepLabv2 | **I** | -          | ***I+C*** | 68.7 | 69.3 |
-| ASDT           | arxiv22   | ResNet38   | ResNet101 DeepLabv2 | **I** | -          | ***I***   | 69.7 | 70.1 |
 | PMM            | ICCV21    | Res2Net101 | Res2Net101 PSPnet   | **I** | -          | **?**     | 70.0 | 70.5 |
 | ASDT           | arxiv22   | ResNet38   | Res2Net101 PSPnet   | **I** | -          | ***I***   | 71.1 | 71.0 |
 | MCTformer      | CVPR22    | DeiT-S     | ResNet38 DeeplabV1  | **I** | -          | **?**     | 71.9 | 71.6 |
