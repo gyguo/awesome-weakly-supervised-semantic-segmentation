@@ -283,3 +283,5 @@
 - [Awesome Weakly-supervised Action Localization](https://github.com/VividLe/awesome-weakly-supervised-action-localization)
 - [Awesome Weakly-supervised Object Localization](https://github.com/gyguo/awesome-weakly-supervised-object-localization)
 
+## Stargazers over time
+[![Stargazers over time](https://starchart.cc/gyguo/awesome-weakly-supervised-semantic-segmentation.svg?variant=adaptive)](https://starchart.cc/gyguo/awesome-weakly-supervised-semantic-segmentation)
