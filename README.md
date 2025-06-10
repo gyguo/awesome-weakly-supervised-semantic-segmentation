@@ -28,10 +28,13 @@
 #### 2025
 - Frozen CLIP-DINO: a Strong Backbone for Weakly Supervised Semantic Segmentation *TPAMI2025*
 - Exploring CLIP's Dense Knowledge for Weakly Supervised Semantic Segmentation *CVPR2025*
+- Weakly Supervised Semantic Segmentation via Progressive Confidence Region Expansion *CVPR2025*
+- WISH: Weakly Supervised Instance Segmentation using Heterogeneous Labels *CVPR2025*
+- FFR: Frequency Feature Rectification for Weakly Supervised Semantic Segmentation *CVPR2025*
+- POT: Prototypical Optimal Transport for Weakly Supervised Semantic Segmentation *CVPR2025*
+- Multi-Label Prototype Visual Spatial Search for Weakly Supervised Semantic Segmentation *CVPR2025*
 - Complementary branch fusing class and semantic knowledge for robust weakly supervised semantic segmentation *PR2025*
 - Toward Modality Gap: Vision Prototype Learning for Weakly-supervised Semantic Segmentation with CLIP *AAAI2025*
-
-
 
 #### 2024
 - DIAL: Dense Image-text ALignment for Weakly Supervised Semantic Segmentation  *ECCV2024*
@@ -154,6 +157,7 @@
 - **DFR:** "Dynamic Feature Regularized Loss for Weakly Supervised Semantic Segmentation" *arxiv2021*
 - **A2GNN:** "Affinity attention graph neural network for weakly supervised semantic segmentation" *TPAMI2021*
 - Scribble Hides Class: Promoting Scribble-Based Weakly-Supervised Semantic Segmentation with Its Class Label *AAAI2024*
+- Soft Self-labeling and Potts Relaxations for Weakly-Supervised Segmentation *CVPR2025*
 
 
 ### 1.4. Supervised by point
