@@ -34,6 +34,7 @@
 - POT: Prototypical Optimal Transport for Weakly Supervised Semantic Segmentation *CVPR2025*
 - Multi-Label Prototype Visual Spatial Search for Weakly Supervised Semantic Segmentation *CVPR2025*
 - Complementary branch fusing class and semantic knowledge for robust weakly supervised semantic segmentation *PR2025*
+- WeakCLIP: Adapting CLIP for Weakly-Supervised Semantic Segmentation *IJCV2025*
 - Toward Modality Gap: Vision Prototype Learning for Weakly-supervised Semantic Segmentation with CLIP *AAAI2025*
 
 #### 2024
