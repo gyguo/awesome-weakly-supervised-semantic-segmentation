@@ -11,6 +11,7 @@
 # Table of Contents
 
 - [1. Paper List](#1-paper-list)
+    + [1.0. supervised by heterogeneous labels ](#10-supervised-by-heterogeneous-labels)
     + [1.1. supervised by image tags (I)](#11-supervised-by-image-tags)
     + [1.2. Supervised by bounding box (B)](#12-supervised-by-bounding-box)
     + [1.3. Supervised by scribble (S)](#13-supervised-by-scribble)
@@ -22,6 +23,10 @@
 - [4. Awesome-list of Weakly-supervised Learning from Our Team](#4-awesome-list-of-weakly-supervised-learning-from-our-team)
 
 # 1. Paper List
+
+### 1.0. supervised by heterogeneous labels
+- WISH: Weakly Supervised Instance Segmentation using Heterogeneous Labels  *CVPR2025*
+
 
 ### 1.1. supervised by image tags
 
