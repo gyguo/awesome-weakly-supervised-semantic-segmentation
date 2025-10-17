@@ -42,6 +42,7 @@
 - UM-CAM: Uncertainty-weighted multi-resolution class activation maps for weakly-supervised segmentation *PR2025*
 - WeakCLIP: Adapting CLIP for Weakly-Supervised Semantic Segmentation *IJCV2025*
 - Toward Modality Gap: Vision Prototype Learning for Weakly-supervised Semantic Segmentation with CLIP *AAAI2025*
+- Instance-Guided Class Activation Mapping for Weakly Supervised Semantic Segmentation *Arxiv2025*
 
 #### 2024
 - DIAL: Dense Image-text ALignment for Weakly Supervised Semantic Segmentation  *ECCV2024*
