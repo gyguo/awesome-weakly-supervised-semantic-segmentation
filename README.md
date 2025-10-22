@@ -37,7 +37,10 @@
 - WISH: Weakly Supervised Instance Segmentation using Heterogeneous Labels *CVPR2025*
 - FFR: Frequency Feature Rectification for Weakly Supervised Semantic Segmentation *CVPR2025*
 - POT: Prototypical Optimal Transport for Weakly Supervised Semantic Segmentation *CVPR2025*
-- Multi-Label Prototype Visual Spatial Search for Weakly Supervised Semantic Segmentation *CVPR2025*
+- Multi-Label Prototype Visual Spatial Search for Weakly Supervised Semantic Segmentation *CVPR2025* 
+- Know Your Attention Maps: Class-specific Token Masking for Weakly Supervised Semantic Segmentation *ICCV2025*
+- Bias-Resilient Weakly Supervised Semantic Segmentation Using Normalizing Flows *ICCV2025*
+- Class Token as Proxy: Optimal Transport-assisted Proxy Learning for Weakly Supervised Semantic Segmentation *ICCV2025*
 - Complementary branch fusing class and semantic knowledge for robust weakly supervised semantic segmentation *PR2025*
 - UM-CAM: Uncertainty-weighted multi-resolution class activation maps for weakly-supervised segmentation *PR2025*
 - WeakCLIP: Adapting CLIP for Weakly-Supervised Semantic Segmentation *IJCV2025*
