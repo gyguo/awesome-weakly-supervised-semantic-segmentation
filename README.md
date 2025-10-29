@@ -41,10 +41,11 @@
 - Know Your Attention Maps: Class-specific Token Masking for Weakly Supervised Semantic Segmentation *ICCV2025*
 - Bias-Resilient Weakly Supervised Semantic Segmentation Using Normalizing Flows *ICCV2025*
 - Class Token as Proxy: Optimal Transport-assisted Proxy Learning for Weakly Supervised Semantic Segmentation *ICCV2025*
+- Toward Modality Gap: Vision Prototype Learning for Weakly-supervised Semantic Segmentation with CLIP *AAAI2025*
+- VLHP: Learning Discriminative Vision-Language Hybrid Prototypes for Weakly Supervised Semantic Segmentation *ACM MM2025*
 - Complementary branch fusing class and semantic knowledge for robust weakly supervised semantic segmentation *PR2025*
 - UM-CAM: Uncertainty-weighted multi-resolution class activation maps for weakly-supervised segmentation *PR2025*
 - WeakCLIP: Adapting CLIP for Weakly-Supervised Semantic Segmentation *IJCV2025*
-- Toward Modality Gap: Vision Prototype Learning for Weakly-supervised Semantic Segmentation with CLIP *AAAI2025*
 - Instance-Guided Class Activation Mapping for Weakly Supervised Semantic Segmentation *Arxiv2025*
 
 #### 2024
