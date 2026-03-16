@@ -25,11 +25,14 @@
 # 1. Paper List
 
 ### 1.0. supervised by heterogeneous labels
-- WISH: Weakly Supervised Instance Segmentation using Heterogeneous Labels  *CVPR2025*
+- WISH: Weakly Supervised Instance Segmentation using Heterogeneous Labels *CVPR2025*
 
 
 ### 1.1. supervised by image tags
 
+#### 2026
+- Unleashing the Power of Optimal Head in CLIP and DINO for Weakly Supervised Semantic Segmentation *PR2026*
+  
 #### 2025
 - Frozen CLIP-DINO: a Strong Backbone for Weakly Supervised Semantic Segmentation *TPAMI2025*
 - Exploring CLIP's Dense Knowledge for Weakly Supervised Semantic Segmentation *CVPR2025*
