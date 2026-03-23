@@ -32,6 +32,7 @@
 
 #### 2026
 - Unleashing the Power of Optimal Head in CLIP and DINO for Weakly Supervised Semantic Segmentation *PR2026*
+- Escaping the CAM Shadow: Uncertainty-Guided Reliable Learning for Weakly Supervised Semantic Segmentation *AAAI2026*
   
 #### 2025
 - Frozen CLIP-DINO: a Strong Backbone for Weakly Supervised Semantic Segmentation *TPAMI2025*
