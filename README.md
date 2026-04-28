@@ -34,6 +34,7 @@
 - Unleashing the Power of Optimal Head in CLIP and DINO for Weakly Supervised Semantic Segmentation *PR2026*
 - Escaping the CAM Shadow: Uncertainty-Guided Reliable Learning for Weakly Supervised Semantic Segmentation *AAAI2026*
 - Integrating Foundation Models with Capsule Networks for Enhanced Weakly-Supervised Semantic Segmentation  *ESWA2026*
+- CLIP Graph Adaptor: A Dual-Graph Adapted Visual–Language Model for Weakly Supervised Semantic Segmentation *TNNLS2026*
   
 #### 2025
 - Frozen CLIP-DINO: a Strong Backbone for Weakly Supervised Semantic Segmentation *TPAMI2025*
